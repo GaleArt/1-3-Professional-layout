@@ -1,1 +1,19 @@
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
 
+.header {
+  width: 100%;
+  background-color: black;
+  color: white;
+  height: 75px;
+}
+
+.index-content {
+  background-color: #F1E4E6;
+}
+
+.footer {
+  width: 100%;
+}
