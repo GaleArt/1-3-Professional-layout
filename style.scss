@@ -6,19 +6,41 @@
 .header {
   width: 100%;
   background-color: #222222;
-  color: white;
   height: 75px;
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__main,
+  &__users {
+    display: flex;
+    align-items: center;
+  }
+  
+  &__search {
+    padding-left: 41px;
+  }
+
+  &__account {
+    padding: 0 33px;
+  }
 }
 
 .index-top {
   background-color: #F1E4E6;
-}
 
-.index-top-content {
-  display: flex;
-  justify-content: space-around;
-}
-
-.index-top-img {
-
+  &__content {
+    display: flex;
+  }
+  &__img {
+    width: 50%;
+    height: 764px;
+  }
+  &__text {
+    width: 50%;
+  }
 }
