@@ -1,3 +1,4 @@
+@import url('http://fonts.cdnfonts.com/css/lato');
 .container {
   width: 1140px;
   margin: 0 auto;
@@ -35,12 +36,54 @@
 
   &__content {
     display: flex;
+    align-items: center;
   }
   &__img {
-    width: 50%;
     height: 764px;
+    margin-left: -230px;
   }
   &__text {
-    width: 50%;
+    width: 405px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #222222;
+  }
+  &__li {
+    width: 12px;
+    height: 93px;
+    background-color: #F16D7F;
+    margin: 0 16px 0 64px;
+  }
+  &__span {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38.4px;
+  }
+  &__red {
+    color: #F16D7F;
+    font-size: 37px;
+    line-height: 44.4px;
+  }
+}
+.index-middle {
+  display: flex;
+  flex-direction: column;
+  margin-top: 65px;
+  &__img {
+    display: flex;
+    justify-content: space-between;
+    &__child {
+      width: 360px;
+      height: 260px;
+      background-color: yellow;
+    }
+  }
+  &__text {
+    &__red {
+      color: #F16D7F;
+    }
   }
 }
