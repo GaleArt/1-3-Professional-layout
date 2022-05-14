@@ -76,14 +76,40 @@
     display: flex;
     justify-content: space-between;
     &__child {
+      position: relative;
+      text-align: center;
       width: 360px;
       height: 260px;
-      background-color: yellow;
+      p {
+        position: absolute;
+        left: 100px;
+        top: 105px;
+        width: 160px;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        font-family: 'Lato';
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.2px;
+      }
+      span {
+        color: #F16D7F;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28.8px;
+      }
     }
-  }
-  &__text {
-    &__red {
-      color: #F16D7F;
+    .lux {
+      margin-top: 30px;
+      width: 1140px;
+      height: 180px;
+      p {
+        left: 490px;
+        top: 55px;
+      }
     }
   }
 }
