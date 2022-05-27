@@ -52,33 +52,26 @@
     float: right;
   }
   &__header {
+    @include txt-l ();
+    text-transform: $ttu;
     margin: 37px 34px 10px;
-    text-transform: uppercase;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 700;
     font-size: 14px;
     line-height: 17px;
   }
   &__item-text {
+    @include txt-m ();
+    text-transform: $ttu;
     padding-top: 14px;
     margin: 0 34px;
-    text-transform: uppercase;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     color: #F16D7F;
   }
   &__item-link {
+    @include txt-m ();
     padding: 6px 55px;
     display: block;
-    text-decoration: none;
     margin: 0;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     color: #6F6E6E;
@@ -100,17 +93,15 @@
   }
   &__text {
     width: 405px;
-    font-family: 'Lato';
-    font-style: normal;
     color: #222222;
     h1 {
-      font-weight: 900;
+      @include txt-xl ();
       font-size: 48px;
       line-height: 58px;
       margin: 0;
     }
     p {
-      font-weight: 700;
+      @include txt-l ();
       font-size: 32px;
       line-height: 38.4px;
       margin: 0;
@@ -140,6 +131,7 @@
       width: 360px;
       height: 260px;
       p {
+        @include txt-m ();
         position: absolute;
         left: 100px;
         top: 105px;
@@ -148,16 +140,14 @@
         display: flex;
         flex-direction: column;
         padding: 0;
-        font-family: 'Lato';
         color: #FFFFFF;
         font-size: 16px;
-        font-weight: 400;
         line-height: 19.2px;
       }
       span {
+        @include txt-l ();
         color: #F16D7F;
         font-size: 24px;
-        font-weight: 700;
         line-height: 28.8px;
       }
     }
@@ -178,18 +168,14 @@
   text-align: center;
 
   h3 {
+    @include txt-m ();
     margin: 0;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
     font-size: 30px;
     line-height: 36px;
   }
   p {
+    @include txt-m ();
     margin: 6px 0 0;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     color: #9F9F9F;
@@ -214,15 +200,12 @@
       opacity: 0;
       &__btn {
         @include flexible ();
+        @include txt-m ();
         justify-content: space-around;
         width: 138px;
-        font-family: 'Lato';
-        font-style: normal;
-        font-weight: 400;
         font-size: 14px;
         line-height: 17px;
         color: #FFFFFF;
-        text-decoration: none;
         border: 1px solid #FFFFFF;
         padding: 10px 13px 8px;
       }
@@ -243,41 +226,32 @@
       padding: 25px 18px 20px;
     }
     h4 {
-      font-family: 'Lato';
-      font-style: normal;
-      font-weight: 400;
+      @include txt-m ();
       font-size: 13px;
       line-height: 16px;
       margin: 0;
     }
     p {
+      @include txt-s ();
       width: 315px;
-      font-family: 'Lato';
-      font-style: normal;
-      font-weight: 300;
       font-size: 14px;
       line-height: 17px;
       color: #5D5D5D;
     }
     
     h5 {
-      font-family: 'Lato';
-      font-style: normal;
-      font-weight: 400;
+      @include txt-m ();
       font-size: 16px;
       line-height: 19px;
       color: #F16D7F;
     }
   }
   &__button {
-    text-decoration: none;
+    @include txt-m ();
     width: 211px;
     padding: 14px 38px;
     background: #ffffff;
     border: 1px solid #FF6A6A;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: #F26376;
@@ -305,16 +279,12 @@
       padding-bottom: 18px;
     }
     &__header {
-      font-family: 'Lato';
-      font-style: normal;
-      font-weight: 400;
+      @include txt-m ();
       font-size: 19.96px;
       line-height: 24px;
     }
     &__text {
-      font-family: 'Lato';
-      font-style: normal;
-      font-weight: 300;
+      @include txt-s ();
       font-size: 13.972px;
       line-height: 17px;
       margin: 0 5px;
@@ -337,9 +307,7 @@
     width: 360px;
     flex-direction: column;
     &__text {
-      font-family: 'Lato';
-      font-style: normal;
-      font-weight: 400;
+      @include txt-m ();
       font-size: 20px;
       line-height: 24px;
       text-align: center;
@@ -349,21 +317,19 @@
   &__subscribe {
     @include flexible ();
     width: 557px;
-    font-family: 'Lato';
     text-align: center;
     flex-direction: column;
     &__header {
+      @include txt-l ();
       margin: 0;
-      font-style: normal;
-      font-weight: 700;
       font-size: 24px;
       line-height: 167.2%;
       color: #222224;
     }
     &__text {
+      @include txt-m ();
       margin: 0;
       font-size: 18px;
-      font-weight: 400;
       line-height: 30px;
       letter-spacing: 0em;
       padding-bottom: 32px;
@@ -372,10 +338,8 @@
       display: flex;
       &__input {
         @include flexible ();
+        @include txt-m ();
         background: #E1E1E1;
-        font-family: 'Lato';
-        font-style: normal;
-        font-weight: 400;
         font-size: 14px;
         line-height: 17px;
         color: #222224;
@@ -393,17 +357,14 @@
       }
       &__btn {
         @include flexible ();
+        @include txt-m ();
         z-index: 2;
         color: #FFFFFF;
         background: #E05C6E;
         border: 1px solid #E05C6E;
-        text-decoration: none;
         text-align: center;
         height: 48px;
         width: 100px;
-        font-family: 'Lato';
-        font-style: normal;
-        font-weight: 400;
         font-size: 14px;
         line-height: 17px;
         border-radius: 0 24px 24px 0;
@@ -421,9 +382,7 @@
     justify-content: space-between;
   }
   &__text {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
+    @include txt-m ();
     font-size: 16px;
     line-height: 19px;
     color: #FBFBFB;
@@ -518,18 +477,14 @@
     border: 1px solid #EAEAEA;
     background: #FFFFFF;
     &__header {
+      @include txt-s ();
       margin: 0;
-      font-family: 'Lato';
-      font-style: normal;
-      font-weight: 300;
       font-size: 14px;
       line-height: 17px;
       color: #F16D7F;
       &__title {
+        @include txt-s ();
         margin: 0;
-        font-family: 'Lato';
-        font-style: normal;
-        font-weight: 300;
         font-size: 18px;
         line-height: 22px;
         color: #4D4D4D;
@@ -542,10 +497,8 @@
       }
     }
     &__text {
+      @include txt-s ();
       margin-top: 48px;
-      font-family: 'Lato';
-      font-style: normal;
-      font-weight: 300;
       font-size: 14px;
       line-height: 17px;
       text-align: center;
@@ -553,10 +506,8 @@
       width: 555px;
     }
     &__price {
+      @include txt-s ();
       padding: 32px 0 64px;
-      font-family: 'Lato';
-      font-style: normal;
-      font-weight: 300;
       font-size: 24px;
       line-height: 29px;
       color: #EF5B70;
@@ -567,12 +518,10 @@
       width: 640px;
       border-top: 1px solid #EAEAEA;
       &__item {
+        @include txt-m ();
         padding: 0 11px;
         background: none;
         border: none;
-        font-family: 'Lato';
-        font-style: normal;
-        font-weight: 400;
         font-size: 14px;
         line-height: 17px;
         color: #6F6E6E;
@@ -580,14 +529,11 @@
     }
     &__btn {
       @include flexible ();
+      @include txt-m ();
       width: 210px;
       height: 48px;
-      text-decoration: none;
       background: #ffffff;
       border: 1px solid #FF6A6A;
-      font-family: 'Lato';
-      font-style: normal;
-      font-weight: 400;
       font-size: 16px;
       line-height: 19px;
       color: #F26376;

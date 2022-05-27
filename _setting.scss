@@ -1,23 +1,45 @@
+/* Mixins (setting.scss) */
 @mixin flexible () {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
-/* Size */
-$ctnr-w: 1140px;
-
-/* Colors, styles */
-$ff: 'Lato';
-$fs: normal;
-/* font-weight */
-$fw: 400;
-$fw_m: 300;
-$fw_xl: 700;
-$fw_xxl: 900;
-
+/* fonts (setting.scss) */
 $ttu: uppercase;
 $ttl: lowercase;
+
+@mixin txt-s () {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+}
+
+@mixin txt-m () {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+}
+
+@mixin txt-l () {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+}
+
+@mixin txt-xl () {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+}
+
+/* Size (setting.scss) */
+$ctnr-w: 1140px;
+
+/* Colors, styles (setting.scss) */
+$ff: 'Lato';
+$fs: normal;
+
+
 
 
 $clr1: #E05C6E;
@@ -34,6 +56,6 @@ $clr11: #5E5E5E;
 $clr12: #6F6E6E;
 $clr13: #F26376;
 
-/* Buttons */
+/* Buttons (setting.scss) */
 
-/* Animations */
+/* Animations (setting.scss) */
