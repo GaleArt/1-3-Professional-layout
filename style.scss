@@ -1,21 +1,21 @@
 @import url('http://fonts.cdnfonts.com/css/lato');
+@import "setting";
+
 .container {
-  width: 1140px;
+  width: $ctnr-w;
   margin: 0 auto;
   position: relative;
 }
 
 .header {
+  @include flexible ();
   width: 100%;
   background-color: #222222;
   height: 75px;
-  display: flex;
-  align-items: center;
 }
 
 .menu {
-  display: flex;
-  align-items: center;
+  @include flexible ();
   justify-content: space-between;
   &__main,
   &__users {
@@ -92,8 +92,7 @@
   background-color: #F1E4E6;
 
   &__content {
-    display: flex;
-    align-items: center;
+    @include flexible ();
   }
   &__img {
     height: 764px;
@@ -207,17 +206,14 @@
     padding-bottom: 30px;
     text-align: left;
     &_overlay {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flexible ();
       position: absolute;
       width: 360px;
       height: 420px;
       z-index: 5;
       opacity: 0;
       &__btn {
-        display: flex;
-        align-items: center;
+        @include flexible ();
         justify-content: space-around;
         width: 138px;
         font-family: 'Lato';
@@ -332,16 +328,14 @@
   height: 448px;
   background: no-repeat center url("assets/footer.jpg");
   &__area {
-    display: flex;
-    align-items: center;
+    @include flexible ();
     justify-content: space-between;
     padding: 86px 0 0;
   }
   &__quote {
+    @include flexible ();
     width: 360px;
-    display: flex;
     flex-direction: column;
-    align-items: center;
     &__text {
       font-family: 'Lato';
       font-style: normal;
@@ -353,12 +347,11 @@
     }
   }
   &__subscribe {
+    @include flexible ();
     width: 557px;
     font-family: 'Lato';
     text-align: center;
-    display: flex;
     flex-direction: column;
-    align-items: center;
     &__header {
       margin: 0;
       font-style: normal;
@@ -378,14 +371,13 @@
     &__form {
       display: flex;
       &__input {
+        @include flexible ();
         background: #E1E1E1;
         font-family: 'Lato';
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 17px;
-        display: flex;
-        align-items: center;
         color: #222224;
         opacity: 0.67;
         width: 256px;
@@ -400,15 +392,13 @@
         outline: none;
       }
       &__btn {
+        @include flexible ();
         z-index: 2;
         color: #FFFFFF;
         background: #E05C6E;
         border: 1px solid #E05C6E;
-        display: flex;
         text-decoration: none;
         text-align: center;
-        align-items: center;
-        justify-content: center;
         height: 48px;
         width: 100px;
         font-family: 'Lato';
@@ -426,9 +416,8 @@
 .copyright {
   background: #222224;
   &__area {
+    @include flexible ();
     padding: 24px 0;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
   }
   &__text {
@@ -444,11 +433,9 @@
     justify-content: space-between;
     width: 150px;
     &__img {
+      @include flexible ();
       width: 32px;
       height: 32px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       background-color: #fff;
     }
     &__img:hover {
@@ -465,9 +452,8 @@
     background: #F8F3F4;
     height: 148px;
     &__text {
-      display: flex;
+      @include flexible ();
       justify-content: space-between;
-      align-items: center;
     }
   }
   &__carousel {
@@ -524,11 +510,9 @@
     text-align: center;
   }
   &__collection {
-    display: flex;
+    @include flexible ();
     flex-direction: column;
-    align-items: center;
     text-align: center;
-    justify-content: center;
     margin-top: -60px;
     height: 600px;
     border: 1px solid #EAEAEA;
@@ -578,11 +562,10 @@
       color: #EF5B70;
     }
     &__choose {
+      @include flexible ();
       padding: 64px 0 48px;
       width: 640px;
       border-top: 1px solid #EAEAEA;
-      display: flex;
-      justify-content: center;
       &__item {
         padding: 0 11px;
         background: none;
@@ -596,9 +579,7 @@
       }
     }
     &__btn {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flexible ();
       width: 210px;
       height: 48px;
       text-decoration: none;
