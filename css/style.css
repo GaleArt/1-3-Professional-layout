@@ -1,10 +1,66 @@
 @import url("http://fonts.cdnfonts.com/css/lato");
-/* display (setting.scss) */
-/* fonts (setting.scss) */
-/* Size (setting.scss) */
-/* Colors, styles (setting.scss) */
-/* Buttons (setting.scss) */
-/* Animations (setting.scss) */
+/* display (_settings.scss) */
+/* fonts (_settings.scss) */
+/* Size (_settings.scss) */
+/* Colors (_settings.scss) */
+/* Animations (_settings.scss) */
+/* display (_settings.scss) */
+/* fonts (_settings.scss) */
+/* Size (_settings.scss) */
+/* Colors (_settings.scss) */
+/* Animations (_settings.scss) */
+/* shopping basket (_items.scss) */
+.shopping-basket {
+  width: 100%;
+}
+
+/* filter (_items.scss) */
+.filter__content {
+  z-index: 15;
+  border: 1px solid #000;
+  padding: 20px;
+  position: absolute;
+  top: 0px;
+  background-color: #fff;
+  width: 360px;
+}
+
+.filter__content__box {
+  list-style-type: none;
+}
+
+.filter__details {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter__details a {
+  text-decoration: none;
+}
+
+.filter__details a:hover {
+  color: red;
+}
+
+.filter__category {
+  display: flex;
+  text-transform: uppercase;
+  line-height: 37px;
+  border-bottom: 1px solid #EBEBEB;
+}
+
+.filter__category::-webkit-details-marker {
+  display: none;
+}
+
+.filter__category::before {
+  content: url(../assets/filter.jpg);
+}
+
+.filter__details[open] > .filter__category::before {
+  content: url(../assets/filter.jpg);
+}
+
 .container {
   width: 1140px;
   margin: 0 auto;
@@ -40,6 +96,31 @@
   padding: 0 33px;
 }
 
+.menu__basket {
+  position: relative;
+}
+
+.menu__basket-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #F16D7F;
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  top: -10px;
+  right: -10px;
+}
+
 .menu__search:hover svg path,
 .menu__burger:hover svg path,
 .menu__account:hover svg path,
@@ -65,7 +146,7 @@
 }
 
 .menu-box__header {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 700;
   text-transform: uppercase;
@@ -75,26 +156,26 @@
 }
 
 .menu-box__item-text {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
   text-transform: uppercase;
   padding-top: 14px;
   margin: 0 34px;
-  font-size: 14px;
-  line-height: 17px;
   color: #F16D7F;
 }
 
 .menu-box__item-link {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
   padding: 6px 55px;
   display: block;
   margin: 0;
-  font-size: 14px;
-  line-height: 17px;
   color: #6F6E6E;
 }
 
@@ -123,7 +204,7 @@
 }
 
 .index-top__text h1 {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 900;
   font-size: 48px;
@@ -132,7 +213,7 @@
 }
 
 .index-top__text p {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -170,9 +251,11 @@
 }
 
 .index-middle__img__child p {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
   position: absolute;
   left: 100px;
   top: 105px;
@@ -182,12 +265,10 @@
   flex-direction: column;
   padding: 0;
   color: #FFFFFF;
-  font-size: 16px;
-  line-height: 19.2px;
 }
 
 .index-middle__img__child span {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 700;
   color: #F16D7F;
@@ -212,21 +293,23 @@
 }
 
 .index-featured h3 {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
   margin: 0;
   font-size: 30px;
   line-height: 36px;
 }
 
 .index-featured p {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
-  margin: 6px 0 0;
   font-size: 14px;
   line-height: 17px;
+  margin: 6px 0 0;
   color: #9F9F9F;
 }
 
@@ -259,13 +342,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
-  justify-content: space-around;
-  width: 138px;
   font-size: 14px;
   line-height: 17px;
+  justify-content: space-around;
+  width: 138px;
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
   padding: 10px 13px 8px;
@@ -291,16 +374,18 @@
 }
 
 .index-featured__card h4 {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
   font-size: 13px;
   line-height: 16px;
   margin: 0;
 }
 
 .index-featured__card p {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 300;
   width: 315px;
@@ -310,7 +395,7 @@
 }
 
 .index-featured__card h5 {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -319,15 +404,15 @@
 }
 
 .index-featured__button {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
   width: 211px;
   padding: 14px 38px;
   background: #ffffff;
   border: 1px solid #FF6A6A;
-  font-size: 16px;
-  line-height: 19px;
   color: #F26376;
 }
 
@@ -359,15 +444,17 @@
 }
 
 .index-bottom__item__header {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
   font-size: 19.96px;
   line-height: 24px;
 }
 
 .index-bottom__item__text {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 300;
   font-size: 13.972px;
@@ -399,9 +486,11 @@
 }
 
 .footer__quote__text {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
   font-size: 20px;
   line-height: 24px;
   text-align: center;
@@ -418,7 +507,7 @@
 }
 
 .footer__subscribe__header {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 700;
   margin: 0;
@@ -428,9 +517,11 @@
 }
 
 .footer__subscribe__text {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
   margin: 0;
   font-size: 18px;
   line-height: 30px;
@@ -446,12 +537,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
-  background: #E1E1E1;
   font-size: 14px;
   line-height: 17px;
+  background: #E1E1E1;
   color: #222224;
   opacity: 0.67;
   width: 256px;
@@ -470,9 +561,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
   z-index: 2;
   color: #FFFFFF;
   background: #E05C6E;
@@ -480,8 +573,6 @@
   text-align: center;
   height: 48px;
   width: 100px;
-  font-size: 14px;
-  line-height: 17px;
   border-radius: 0 24px 24px 0;
   margin-left: -1px;
 }
@@ -499,7 +590,7 @@
 }
 
 .copyright__text {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -530,6 +621,18 @@
   fill: white;
 }
 
+.catalog {
+  margin: 39px 0;
+}
+
+.catalog__filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
 .product__header {
   background: #F8F3F4;
   height: 148px;
@@ -558,7 +661,7 @@
   outline: none;
   position: absolute;
   top: 50%;
-  left: 20px;
+  left: calc(50% - 570px);
   width: 47px;
   height: 47px;
   transform: translateY(-50%) translateZ(0);
@@ -572,7 +675,7 @@
 
 .product__carousel__btn__next {
   left: auto;
-  right: 20px;
+  right: calc(50% - 570px);
 }
 
 .product__carousel__wrap {
@@ -615,7 +718,7 @@
 }
 
 .product__collection__header {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 300;
   margin: 0;
@@ -625,7 +728,7 @@
 }
 
 .product__collection__header__title {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 300;
   margin: 0;
@@ -642,7 +745,7 @@
 }
 
 .product__collection__text {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 300;
   margin-top: 48px;
@@ -654,7 +757,7 @@
 }
 
 .product__collection__price {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 300;
   padding: 32px 0 64px;
@@ -673,9 +776,11 @@
 }
 
 .product__collection__choose__item {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
   padding: 0 11px;
   background: none;
   border: none;
@@ -688,15 +793,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
   width: 210px;
   height: 48px;
   background: #ffffff;
   border: 1px solid #FF6A6A;
-  font-size: 16px;
-  line-height: 19px;
   color: #F26376;
 }
 

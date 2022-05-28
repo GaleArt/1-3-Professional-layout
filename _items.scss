@@ -1,0 +1,51 @@
+@import "settings";
+/* shopping basket (_items.scss) */
+.shopping-basket {
+    width: 100%;
+}
+
+
+/* filter (_items.scss) */
+$f-list-path: url(../assets/filter.jpg);
+
+.filter {
+    &__content {
+        z-index: 15;
+        border: 1px solid #000;
+        padding: 20px;
+        position: absolute;
+        top: 0px;
+        background-color: #fff;
+        width: 360px;
+        &__box {list-style-type: none;}
+    }
+    &__details {
+        display: flex;
+        flex-direction: column;
+    }
+    &__details a {
+        text-decoration: none;
+    }
+    &__details a:hover {
+        color: red;
+    }
+}
+  
+  .filter__category {
+    display: flex;
+    text-transform: uppercase;
+    line-height: 37px;
+    border-bottom: 1px solid #EBEBEB;
+  }
+  
+  .filter__category::-webkit-details-marker {
+    display: none;
+  }
+  
+  .filter__category::before {
+    content: url(../assets/filter.jpg);
+  }
+  
+  .filter__details[open] > .filter__category::before {
+    content: url(../assets/filter.jpg);
+  }

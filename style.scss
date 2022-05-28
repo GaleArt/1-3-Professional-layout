@@ -1,5 +1,6 @@
 @import url('http://fonts.cdnfonts.com/css/lato');
-@import "setting";
+@import "settings";
+@import "items";
 
 .container {
   width: $ctnr-w;
@@ -31,6 +32,22 @@
     padding: 0 33px;
   }
   
+  &__basket {position: relative;}
+  &__basket-count {
+    @include flexible ();
+    @include txt-m ();
+    font-size: 12px;
+    line-height: 14px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #F16D7F;
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    top: -10px;
+    right: -10px;
+  }
+
   &__search:hover svg path,
   &__burger:hover svg path,
   &__account:hover svg path,
@@ -63,8 +80,6 @@
     text-transform: $ttu;
     padding-top: 14px;
     margin: 0 34px;
-    font-size: 14px;
-    line-height: 17px;
     color: #F16D7F;
   }
   &__item-link {
@@ -72,8 +87,6 @@
     padding: 6px 55px;
     display: block;
     margin: 0;
-    font-size: 14px;
-    line-height: 17px;
     color: #6F6E6E;
   }
   &__item-link:hover {
@@ -131,7 +144,7 @@
       width: 360px;
       height: 260px;
       p {
-        @include txt-m ();
+        @include txt-mm ();
         position: absolute;
         left: 100px;
         top: 105px;
@@ -141,8 +154,6 @@
         flex-direction: column;
         padding: 0;
         color: #FFFFFF;
-        font-size: 16px;
-        line-height: 19.2px;
       }
       span {
         @include txt-l ();
@@ -176,8 +187,6 @@
   p {
     @include txt-m ();
     margin: 6px 0 0;
-    font-size: 14px;
-    line-height: 17px;
     color: #9F9F9F;
   }
   &__area {
@@ -203,8 +212,6 @@
         @include txt-m ();
         justify-content: space-around;
         width: 138px;
-        font-size: 14px;
-        line-height: 17px;
         color: #FFFFFF;
         border: 1px solid #FFFFFF;
         padding: 10px 13px 8px;
@@ -240,20 +247,16 @@
     }
     
     h5 {
-      @include txt-m ();
-      font-size: 16px;
-      line-height: 19px;
+      @include txt-mm ();
       color: #F16D7F;
     }
   }
   &__button {
-    @include txt-m ();
+    @include txt-mm ();
     width: 211px;
     padding: 14px 38px;
     background: #ffffff;
     border: 1px solid #FF6A6A;
-    font-size: 16px;
-    line-height: 19px;
     color: #F26376;
   }
   &__button:hover {
@@ -340,8 +343,6 @@
         @include flexible ();
         @include txt-m ();
         background: #E1E1E1;
-        font-size: 14px;
-        line-height: 17px;
         color: #222224;
         opacity: 0.67;
         width: 256px;
@@ -365,8 +366,6 @@
         text-align: center;
         height: 48px;
         width: 100px;
-        font-size: 14px;
-        line-height: 17px;
         border-radius: 0 24px 24px 0;
         margin-left: -1px;
       }
@@ -382,9 +381,7 @@
     justify-content: space-between;
   }
   &__text {
-    @include txt-m ();
-    font-size: 16px;
-    line-height: 19px;
+    @include txt-mm ();
     color: #FBFBFB;
   }
   &__social {
@@ -403,6 +400,15 @@
     &__img:hover svg path {
       fill: white;
     }
+  }
+}
+
+.catalog {
+  margin: 39px 0;
+  &__filter {
+    @include flexible ();
+    justify-content: space-between;
+    position: relative;
   }
 }
 
@@ -429,7 +435,7 @@
       outline: none;
       position: absolute;
 		  top: 50%;
-		  left: 20px;
+      left: calc(50% - 570px);
 		  width: 47px;
 		  height: 47px;
 		  transform: translateY(-50%) translateZ(0);
@@ -442,7 +448,7 @@
     }
     &__btn__next {
       left: auto;
-			right: 20px;
+			right: calc(50% - 570px);
     }
     &__wrap {
       display: flex;
@@ -529,13 +535,11 @@
     }
     &__btn {
       @include flexible ();
-      @include txt-m ();
+      @include txt-mm ();
       width: 210px;
       height: 48px;
       background: #ffffff;
       border: 1px solid #FF6A6A;
-      font-size: 16px;
-      line-height: 19px;
       color: #F26376;
       &__text {
         padding-left: 22px;
@@ -548,3 +552,4 @@
     &__btn:hover svg path {fill: #ffffff;}
   }
 }
+
