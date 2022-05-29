@@ -410,6 +410,9 @@
     justify-content: space-between;
     position: relative;
   }
+  &__featured {
+    padding-top: 84px;
+  }
 }
 
 .product {
@@ -523,15 +526,6 @@
       padding: 64px 0 48px;
       width: 640px;
       border-top: 1px solid #EAEAEA;
-      &__item {
-        @include txt-m ();
-        padding: 0 11px;
-        background: none;
-        border: none;
-        font-size: 14px;
-        line-height: 17px;
-        color: #6F6E6E;
-      }
     }
     &__btn {
       @include flexible ();
