@@ -122,3 +122,40 @@ $f-list-path: url(../assets/filter.jpg);
     content: url(../assets/appearance.png);
   }
 }
+
+/* breadcrumb (_items.scss) */
+.breadcrumb {
+  @include flexible ();
+  outline: none;
+  text-align: center;
+  ul {
+    padding: 5px;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    border: 1px solid #EBEBEB;
+  }
+  li {
+    border: none;
+    display: inline;
+  }
+  a {
+    @include txt-mm ();
+    font-weight: 300;
+    color: #B1B1B1;
+    padding: 5px 10px;
+    display: inline-block;
+    border: 1px solid transparent;
+    text-decoration: none;
+  }
+}
+.breadcrumb a:hover, .breadcrumb a:focus {
+  border-color: #fff;
+  background-color: #fdfdfd;
+}
+.breadcrumb a.active,
+.breadcrumb a:active {
+  @include txt-mm ();
+  font-weight: 300;
+  color: #EF5B70;
+}
