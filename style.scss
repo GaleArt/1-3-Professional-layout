@@ -1,21 +1,22 @@
 @import url('http://fonts.cdnfonts.com/css/lato');
+@import "settings";
+@import "items";
+
 .container {
-  width: 1140px;
+  width: $ctnr-w;
   margin: 0 auto;
   position: relative;
 }
 
 .header {
+  @include flexible ();
   width: 100%;
   background-color: #222222;
   height: 75px;
-  display: flex;
-  align-items: center;
 }
 
 .menu {
-  display: flex;
-  align-items: center;
+  @include flexible ();
   justify-content: space-between;
   &__main,
   &__users {
@@ -31,6 +32,22 @@
     padding: 0 33px;
   }
   
+  &__basket {position: relative;}
+  &__basket-count {
+    @include flexible ();
+    @include txt-m ();
+    font-size: 12px;
+    line-height: 14px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #F16D7F;
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    top: -10px;
+    right: -10px;
+  }
+
   &__search:hover svg path,
   &__burger:hover svg path,
   &__account:hover svg path,
@@ -52,35 +69,24 @@
     float: right;
   }
   &__header {
+    @include txt-l ();
+    text-transform: $ttu;
     margin: 37px 34px 10px;
-    text-transform: uppercase;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 700;
     font-size: 14px;
     line-height: 17px;
   }
   &__item-text {
+    @include txt-m ();
+    text-transform: $ttu;
     padding-top: 14px;
     margin: 0 34px;
-    text-transform: uppercase;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
     color: #F16D7F;
   }
   &__item-link {
+    @include txt-m ();
     padding: 6px 55px;
     display: block;
-    text-decoration: none;
     margin: 0;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
     color: #6F6E6E;
   }
   &__item-link:hover {
@@ -92,8 +98,7 @@
   background-color: #F1E4E6;
 
   &__content {
-    display: flex;
-    align-items: center;
+    @include flexible ();
   }
   &__img {
     height: 764px;
@@ -101,17 +106,15 @@
   }
   &__text {
     width: 405px;
-    font-family: 'Lato';
-    font-style: normal;
     color: #222222;
     h1 {
-      font-weight: 900;
+      @include txt-xl ();
       font-size: 48px;
       line-height: 58px;
       margin: 0;
     }
     p {
-      font-weight: 700;
+      @include txt-l ();
       font-size: 32px;
       line-height: 38.4px;
       margin: 0;
@@ -141,6 +144,7 @@
       width: 360px;
       height: 260px;
       p {
+        @include txt-mm ();
         position: absolute;
         left: 100px;
         top: 105px;
@@ -149,16 +153,12 @@
         display: flex;
         flex-direction: column;
         padding: 0;
-        font-family: 'Lato';
         color: #FFFFFF;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 19.2px;
       }
       span {
+        @include txt-l ();
         color: #F16D7F;
         font-size: 24px;
-        font-weight: 700;
         line-height: 28.8px;
       }
     }
@@ -179,20 +179,14 @@
   text-align: center;
 
   h3 {
+    @include txt-m ();
     margin: 0;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
     font-size: 30px;
     line-height: 36px;
   }
   p {
+    @include txt-m ();
     margin: 6px 0 0;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
     color: #9F9F9F;
   }
   &__area {
@@ -207,26 +201,18 @@
     padding-bottom: 30px;
     text-align: left;
     &_overlay {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flexible ();
       position: absolute;
       width: 360px;
       height: 420px;
       z-index: 5;
       opacity: 0;
       &__btn {
-        display: flex;
-        align-items: center;
+        @include flexible ();
+        @include txt-m ();
         justify-content: space-around;
         width: 138px;
-        font-family: 'Lato';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
         color: #FFFFFF;
-        text-decoration: none;
         border: 1px solid #FFFFFF;
         padding: 10px 13px 8px;
       }
@@ -247,43 +233,30 @@
       padding: 25px 18px 20px;
     }
     h4 {
-      font-family: 'Lato';
-      font-style: normal;
-      font-weight: 400;
+      @include txt-m ();
       font-size: 13px;
       line-height: 16px;
       margin: 0;
     }
     p {
+      @include txt-s ();
       width: 315px;
-      font-family: 'Lato';
-      font-style: normal;
-      font-weight: 300;
       font-size: 14px;
       line-height: 17px;
       color: #5D5D5D;
     }
     
     h5 {
-      font-family: 'Lato';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 19px;
+      @include txt-mm ();
       color: #F16D7F;
     }
   }
   &__button {
-    text-decoration: none;
+    @include txt-mm ();
     width: 211px;
     padding: 14px 38px;
     background: #ffffff;
     border: 1px solid #FF6A6A;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
     color: #F26376;
   }
   &__button:hover {
@@ -309,16 +282,12 @@
       padding-bottom: 18px;
     }
     &__header {
-      font-family: 'Lato';
-      font-style: normal;
-      font-weight: 400;
+      @include txt-m ();
       font-size: 19.96px;
       line-height: 24px;
     }
     &__text {
-      font-family: 'Lato';
-      font-style: normal;
-      font-weight: 300;
+      @include txt-s ();
       font-size: 13.972px;
       line-height: 17px;
       margin: 0 5px;
@@ -332,20 +301,16 @@
   height: 448px;
   background: no-repeat center url("assets/footer.jpg");
   &__area {
-    display: flex;
-    align-items: center;
+    @include flexible ();
     justify-content: space-between;
     padding: 86px 0 0;
   }
   &__quote {
+    @include flexible ();
     width: 360px;
-    display: flex;
     flex-direction: column;
-    align-items: center;
     &__text {
-      font-family: 'Lato';
-      font-style: normal;
-      font-weight: 400;
+      @include txt-m ();
       font-size: 20px;
       line-height: 24px;
       text-align: center;
@@ -353,24 +318,21 @@
     }
   }
   &__subscribe {
+    @include flexible ();
     width: 557px;
-    font-family: 'Lato';
     text-align: center;
-    display: flex;
     flex-direction: column;
-    align-items: center;
     &__header {
+      @include txt-l ();
       margin: 0;
-      font-style: normal;
-      font-weight: 700;
       font-size: 24px;
       line-height: 167.2%;
       color: #222224;
     }
     &__text {
+      @include txt-m ();
       margin: 0;
       font-size: 18px;
-      font-weight: 400;
       line-height: 30px;
       letter-spacing: 0em;
       padding-bottom: 32px;
@@ -378,14 +340,9 @@
     &__form {
       display: flex;
       &__input {
+        @include flexible ();
+        @include txt-m ();
         background: #E1E1E1;
-        font-family: 'Lato';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-        display: flex;
-        align-items: center;
         color: #222224;
         opacity: 0.67;
         width: 256px;
@@ -400,22 +357,15 @@
         outline: none;
       }
       &__btn {
+        @include flexible ();
+        @include txt-m ();
         z-index: 2;
         color: #FFFFFF;
         background: #E05C6E;
         border: 1px solid #E05C6E;
-        display: flex;
-        text-decoration: none;
         text-align: center;
-        align-items: center;
-        justify-content: center;
         height: 48px;
         width: 100px;
-        font-family: 'Lato';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
         border-radius: 0 24px 24px 0;
         margin-left: -1px;
       }
@@ -426,17 +376,12 @@
 .copyright {
   background: #222224;
   &__area {
+    @include flexible ();
     padding: 24px 0;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
   }
   &__text {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+    @include txt-mm ();
     color: #FBFBFB;
   }
   &__social {
@@ -444,11 +389,9 @@
     justify-content: space-between;
     width: 150px;
     &__img {
+      @include flexible ();
       width: 32px;
       height: 32px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       background-color: #fff;
     }
     &__img:hover {
@@ -460,14 +403,26 @@
   }
 }
 
+.catalog {
+  margin: 39px 0;
+  &__filter {
+    @include flexible ();
+    justify-content: space-between;
+    position: relative;
+  }
+  &__featured {
+    padding-top: 84px;
+    padding-bottom: 96px;
+  }
+}
+
 .product {
   &__header {
     background: #F8F3F4;
     height: 148px;
     &__text {
-      display: flex;
+      @include flexible ();
       justify-content: space-between;
-      align-items: center;
     }
   }
   &__carousel {
@@ -484,7 +439,7 @@
       outline: none;
       position: absolute;
 		  top: 50%;
-		  left: 20px;
+      left: calc(50% - 570px);
 		  width: 47px;
 		  height: 47px;
 		  transform: translateY(-50%) translateZ(0);
@@ -497,7 +452,7 @@
     }
     &__btn__next {
       left: auto;
-			right: 20px;
+			right: calc(50% - 570px);
     }
     &__wrap {
       display: flex;
@@ -524,28 +479,22 @@
     text-align: center;
   }
   &__collection {
-    display: flex;
+    @include flexible ();
     flex-direction: column;
-    align-items: center;
     text-align: center;
-    justify-content: center;
     margin-top: -60px;
     height: 600px;
     border: 1px solid #EAEAEA;
     background: #FFFFFF;
     &__header {
+      @include txt-s ();
       margin: 0;
-      font-family: 'Lato';
-      font-style: normal;
-      font-weight: 300;
       font-size: 14px;
       line-height: 17px;
       color: #F16D7F;
       &__title {
+        @include txt-s ();
         margin: 0;
-        font-family: 'Lato';
-        font-style: normal;
-        font-weight: 300;
         font-size: 18px;
         line-height: 22px;
         color: #4D4D4D;
@@ -558,10 +507,8 @@
       }
     }
     &__text {
+      @include txt-s ();
       margin-top: 48px;
-      font-family: 'Lato';
-      font-style: normal;
-      font-weight: 300;
       font-size: 14px;
       line-height: 17px;
       text-align: center;
@@ -569,46 +516,25 @@
       width: 555px;
     }
     &__price {
+      @include txt-s ();
       padding: 32px 0 64px;
-      font-family: 'Lato';
-      font-style: normal;
-      font-weight: 300;
       font-size: 24px;
       line-height: 29px;
       color: #EF5B70;
     }
     &__choose {
+      @include flexible ();
       padding: 64px 0 48px;
       width: 640px;
       border-top: 1px solid #EAEAEA;
-      display: flex;
-      justify-content: center;
-      &__item {
-        padding: 0 11px;
-        background: none;
-        border: none;
-        font-family: 'Lato';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-        color: #6F6E6E;
-      }
     }
     &__btn {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flexible ();
+      @include txt-mm ();
       width: 210px;
       height: 48px;
-      text-decoration: none;
       background: #ffffff;
       border: 1px solid #FF6A6A;
-      font-family: 'Lato';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 19px;
       color: #F26376;
       &__text {
         padding-left: 22px;
@@ -621,3 +547,4 @@
     &__btn:hover svg path {fill: #ffffff;}
   }
 }
+

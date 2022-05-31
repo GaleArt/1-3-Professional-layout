@@ -74,3 +74,15 @@ function closeMenu() {
 	});
 
 })();
+
+/* Вешаем счетчик для корзины */
+const btn = document.querySelector('.product__collection__btn');
+const display = document.querySelector('.menu__basket-count');
+
+function basketCounter(event) {
+  event.preventDefault();
+  let counter = display.textContent;
+  display.textContent = parseInt(counter) + 1;
+}
+
+btn.addEventListener('click', basketCounter);
