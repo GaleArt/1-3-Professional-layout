@@ -9,6 +9,7 @@
 $f-list-path: url(../assets/filter.jpg);
 .filter {
     &__content {
+      margin-top: 31px;
         z-index: 15;
         padding: 20px;
         position: absolute;
@@ -93,6 +94,7 @@ $f-list-path: url(../assets/filter.jpg);
   position: absolute;
   top: 0;
   left: 390px;
+  margin-top: 31px;
   padding: 20px 0;
   width: 360px;
   &__list {
