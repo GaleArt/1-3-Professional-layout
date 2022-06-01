@@ -1014,4 +1014,70 @@
 .product__collection__btn:hover svg path {
   fill: #ffffff;
 }
+
+.registration {
+  display: flex;
+  padding: 5.6% 0 8.4%;
+}
+
+.registration__input {
+  width: 30%;
+}
+
+.registration__input input {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-weight: 300;
+  color: #222222;
+  width: 100%;
+  padding: 2% 0 3% 3%;
+  margin: 3% 0;
+  border: 1px solid #A4A4A4;
+}
+
+.registration__input input:active,
+.registration__input input:focus {
+  outline: 1px solid #F16D7F;
+}
+
+.registration__input input::placeholder,
+.registration__input p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.registration__input input[type="checkbox"], .registration__input [type="radio"] {
+  margin: 0;
+  padding: 0;
+}
+
+.registration__input label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  margin: 32px 0;
+  width: 40%;
+  text-align: left;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+}
+
+.registration__input span {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 300;
+  color: #222222;
+}
 /*# sourceMappingURL=style.css.map */
