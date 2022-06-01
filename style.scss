@@ -403,13 +403,8 @@
   }
 }
 
-.catalog {
+.pages {
   margin: 39px 0;
-  &__filter {
-    @include flexible ();
-    justify-content: space-between;
-    position: relative;
-  }
   &__header {
     @include flexible ();
     height: 148px;
@@ -449,6 +444,14 @@
         color: #F16D7F;
       }
     }
+  }
+}
+
+.catalog {
+  &__filter {
+    @include flexible ();
+    justify-content: space-between;
+    position: relative;
   }
   &__featured {
     padding-top: 84px;
