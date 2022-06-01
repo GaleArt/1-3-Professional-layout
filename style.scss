@@ -299,7 +299,7 @@
 .footer {
   width: 100%;
   height: 448px;
-  background: no-repeat center url("assets/footer.jpg");
+  background: no-repeat center url("../assets/footer.jpg");
   &__area {
     @include flexible ();
     justify-content: space-between;
@@ -591,3 +591,6 @@
   }
 }
 
+.registration {
+
+}
