@@ -432,7 +432,9 @@
         line-height: 17px;
         color: #636363;
       }
-      li a:hover {
+      li a:hover,
+      li a:active,
+      .selected {
         color: #F16D7F;
         font-weight: bold;
       }

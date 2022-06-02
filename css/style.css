@@ -851,7 +851,9 @@
   color: #636363;
 }
 
-.pages__header__text li a:hover {
+.pages__header__text li a:hover,
+.pages__header__text li a:active,
+.pages__header__text .selected {
   color: #F16D7F;
   font-weight: bold;
 }
