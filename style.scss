@@ -300,6 +300,7 @@
   width: 100%;
   height: 448px;
   background: no-repeat center url("../assets/footer.jpg");
+  background-position: bottom;
   &__area {
     @include flexible ();
     justify-content: space-between;
@@ -594,14 +595,15 @@
 .registration {
   display: flex;
   padding: 5.6% 0 8.4%;
+  justify-content: space-between;
   &__input {
-    width: 30%;
+    width: 31%;
     input {
       @include txt-s ();
       font-weight: 300;
       color: #222222;
-      width: 100%;
-      padding: 2% 0 3% 3%;
+      width: 93%;
+      padding: 2% 3% 3%;
       margin: 3% 0;
       border: 1px solid #A4A4A4;
     }
@@ -616,9 +618,17 @@
       line-height: 16px;
       color: #B1B1B1;
     }
-    input[type="checkbox"], [type="radio"] {
+    p {
+      padding: 0 0 10%;
+      margin: -0.5% 0 0;
+    }
+    input[type="radio"] {
       margin: 0;
       padding: 0;
+    }
+    input[type="radio"]:active,
+    input[type="radio"]:focus {
+      outline: none;
     }
     label {
       @include flexible ();
@@ -635,5 +645,29 @@
       font-weight: 300;
       color: #222222;
     }
+  }
+  &__text {
+    width: 57%;
+    @include txt-s ();
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    span {
+      text-transform: $ttu;
+    }
+    p {
+      margin: 3% 0;
+    }
+    ul {
+      padding: 0;
+    }
+    li {
+      list-style-type: none;
+      padding: 1% 0;
+    }
+    li:before {
+      content: "✓ ";
+    }
+  
   }
 }
