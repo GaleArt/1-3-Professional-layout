@@ -452,27 +452,27 @@
   color: #F16D7F;
 }
 
-.index-top {
+.banner {
   background-color: #F1E4E6;
 }
 
-.index-top__content {
+.banner__content {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.index-top__img {
+.banner__img {
   height: 764px;
   margin-left: -230px;
 }
 
-.index-top__text {
+.banner__text {
   width: 405px;
   color: #222222;
 }
 
-.index-top__text h1 {
+.banner__text h1 {
   font-family: "Lato";
   font-style: normal;
   font-weight: 900;
@@ -481,7 +481,7 @@
   margin: 0;
 }
 
-.index-top__text p {
+.banner__text p {
   font-family: "Lato";
   font-style: normal;
   font-weight: 700;
@@ -490,11 +490,11 @@
   margin: 0;
 }
 
-.index-top__text span {
+.banner__text span {
   color: #F16D7F;
 }
 
-.index-top__li {
+.banner__li {
   width: 12px;
   height: 93px;
   background-color: #F16D7F;
