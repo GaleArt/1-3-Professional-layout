@@ -501,29 +501,29 @@
   margin: 0 16px 0 64px;
 }
 
-.index-middle {
+.gallery {
   display: flex;
   flex-direction: column;
   margin-top: 65px;
 }
 
-.index-middle__img {
+.gallery__img {
   display: flex;
   justify-content: space-between;
 }
 
-.index-middle__img__child {
+.gallery__img__child {
   position: relative;
   text-align: center;
   width: 360px;
   height: 260px;
 }
 
-.index-middle__img__child:hover p {
+.gallery__img__child:hover p {
   transform: scale(1.1);
 }
 
-.index-middle__img__child p {
+.gallery__img__child p {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
@@ -540,7 +540,7 @@
   color: #FFFFFF;
 }
 
-.index-middle__img__child span {
+.gallery__img__child span {
   font-family: "Lato";
   font-style: normal;
   font-weight: 700;
@@ -549,23 +549,23 @@
   line-height: 28.8px;
 }
 
-.index-middle__img .lux {
+.gallery__img .lux {
   margin-top: 30px;
   width: 1140px;
   height: 180px;
 }
 
-.index-middle__img .lux p {
+.gallery__img .lux p {
   left: 490px;
   top: 55px;
 }
 
-.index-featured {
+.featured {
   padding: 96px 0;
   text-align: center;
 }
 
-.index-featured h3 {
+.featured h3 {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
@@ -576,7 +576,7 @@
   line-height: 36px;
 }
 
-.index-featured p {
+.featured p {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
@@ -586,21 +586,21 @@
   color: #9F9F9F;
 }
 
-.index-featured__area {
+.featured__area {
   padding: 48px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.index-featured__card {
+.featured__card {
   width: 360px;
   height: 581px;
   padding-bottom: 30px;
   text-align: left;
 }
 
-.index-featured__card_overlay {
+.featured__card_overlay {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -611,7 +611,7 @@
   opacity: 0;
 }
 
-.index-featured__card_overlay__btn {
+.featured__card_overlay__btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -627,26 +627,26 @@
   padding: 10px 13px 8px;
 }
 
-.index-featured__card_overlay__btn:hover {
+.featured__card_overlay__btn:hover {
   background: rgba(58, 56, 56, 0.86);
   transition: background .3s;
 }
 
-.index-featured__card_overlay:hover {
+.featured__card_overlay:hover {
   transition: .3s;
   background: rgba(58, 56, 56, 0.86);
   opacity: 1;
 }
 
-.index-featured__card__content {
+.featured__card__content {
   height: 420px;
 }
 
-.index-featured__card__text {
+.featured__card__text {
   padding: 25px 18px 20px;
 }
 
-.index-featured__card h4 {
+.featured__card h4 {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
@@ -657,7 +657,7 @@
   margin: 0;
 }
 
-.index-featured__card p {
+.featured__card p {
   font-family: "Lato";
   font-style: normal;
   font-weight: 300;
@@ -667,7 +667,7 @@
   color: #5D5D5D;
 }
 
-.index-featured__card h5 {
+.featured__card h5 {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
@@ -676,7 +676,7 @@
   color: #F16D7F;
 }
 
-.index-featured__button {
+.featured__button {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
@@ -688,15 +688,15 @@
   color: #F26376;
 }
 
-.index-featured__button button {
+.featured__button button {
   padding: 0;
 }
 
-.index-featured__button:after {
+.featured__button:after {
   background: #F26376;
 }
 
-.index-featured__button:hover {
+.featured__button:hover {
   border: 1px solid transparent;
   outline: 0;
   color: #ffffff;
@@ -887,26 +887,33 @@
   color: #FBFBFB;
 }
 
-.copyright__social {
+.copyright__social ul {
   display: flex;
   justify-content: space-between;
   width: 150px;
 }
 
-.copyright__social__img {
+.copyright__social ul, .copyright__social li {
+  padding: 0;
+  list-style: none;
+}
+
+.copyright__social a {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 32px;
   height: 32px;
   background-color: #fff;
+  color: #000000;
 }
 
-.copyright__social__img:hover {
+.copyright__social a:hover {
   background-color: #E05C6E;
+  color: #ffffff;
 }
 
-.copyright__social__img:hover svg path {
+.copyright__social a:hover svg path {
   fill: white;
 }
 
