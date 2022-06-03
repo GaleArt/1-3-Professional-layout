@@ -260,11 +260,57 @@
   }
 }
 
+.puff {
+  animation: puff 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2s both;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-500px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateY(-65px);
+    animation-timing-function: ease-in;
+  }
+  72% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateY(-28px);
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateY(-8px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+}
+
+.bounce {
+  animation: bounce 3s both;
+}
+
 .btn-style {
   position: relative;
   overflow: hidden;
   z-index: 1;
   transition: color 150ms ease-in-out;
+  cursor: pointer;
 }
 
 .btn-style:after {
@@ -455,10 +501,6 @@
   margin: 0 16px 0 64px;
 }
 
-.puff {
-  animation: puff 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2s both;
-}
-
 .index-middle {
   display: flex;
   flex-direction: column;
@@ -636,11 +678,14 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  width: 211px;
   padding: 14px 38px;
   background-color: transparent;
   border: 1px solid #F26376;
   color: #F26376;
+}
+
+.index-featured__button button {
+  padding: 0;
 }
 
 .index-featured__button:after {
@@ -781,8 +826,8 @@
   width: 256px;
   height: 46px;
   border: 1px solid #E1E1E1;
-  border-radius: 23px 0 0 23px;
-  padding-left: 22px;
+  border-radius: 24px 0 0 24px;
+  padding: 0 22px 0 22px;
 }
 
 .footer__subscribe__form__input:hover, .footer__subscribe__form__input:focus {
@@ -799,7 +844,6 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  z-index: 2;
   color: #FFFFFF;
   background: #E05C6E;
   border: 1px solid #E05C6E;
@@ -807,7 +851,15 @@
   height: 48px;
   width: 100px;
   border-radius: 0 24px 24px 0;
-  margin-left: -1px;
+}
+
+.footer__subscribe__form__btn:after {
+  background: #FFFFFF;
+}
+
+.footer__subscribe__form__btn:hover {
+  color: #E05C6E;
+  outline: 0;
 }
 
 .copyright {
