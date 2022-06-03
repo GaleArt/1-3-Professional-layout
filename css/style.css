@@ -519,6 +519,10 @@
   height: 260px;
 }
 
+.index-middle__img__child:hover p {
+  transform: scale(1.1);
+}
+
 .index-middle__img__child p {
   font-family: "Lato";
   font-style: normal;

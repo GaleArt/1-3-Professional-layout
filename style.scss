@@ -34,12 +34,10 @@
     opacity: 1;
   }
 }
-
 .puff {
 	-webkit-animation: puff 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) 2s both;
 	        animation: puff 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) 2s both;
 }
-
  @-webkit-keyframes bounce {
   0% {
     -webkit-transform: translateY(-500px);
@@ -144,13 +142,10 @@
             animation-timing-function: ease-out;
   }
 }
-
-
 .bounce {
 	-webkit-animation: bounce 3s both;
 	        animation: bounce 3s both;
 }
-
 .btn-style {
   position: relative;
   overflow: hidden;
@@ -318,6 +313,11 @@
       text-align: center;
       width: 360px;
       height: 260px;
+      &:hover {
+        p {
+          transform: scale(1.1);
+        }
+      }
       p {
         @include txt-mm ();
         position: absolute;
