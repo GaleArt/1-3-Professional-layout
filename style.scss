@@ -237,6 +237,10 @@
     margin: 16px;
     width: 13px;
     float: right;
+    color:#000000;
+    i:hover {
+      color: #F16D7F;
+    }
   }
   &__header {
     @include txt-l ();
