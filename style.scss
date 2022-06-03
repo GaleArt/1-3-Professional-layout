@@ -2,6 +2,64 @@
 @import "settings";
 @import "items";
 
+ @-webkit-keyframes puff {
+  0% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes puff {
+  0% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.btn-style {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    -webkit-transition: width 150ms ease-in-out;
+    transition: width 150ms ease-in-out;
+  }
+  &:hover:after {
+    width: 100%;
+  }
+}
+
 .container {
   width: $ctnr-w;
   margin: 0 auto;
@@ -131,6 +189,11 @@
   }
 }
 
+.puff {
+	-webkit-animation: puff 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) 2s both;
+	        animation: puff 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) 2s both;
+}
+
 .index-middle {
   display: flex;
   flex-direction: column;
@@ -255,13 +318,17 @@
     @include txt-mm ();
     width: 211px;
     padding: 14px 38px;
-    background: #ffffff;
-    border: 1px solid #FF6A6A;
+    background-color: transparent;
+    border: 1px solid #F26376;
     color: #F26376;
   }
+  &__button:after {
+    background: #F26376;
+  }
   &__button:hover {
-    background: #F16D7F;
-    color: #FFFFFF;
+    border: 1px solid transparent;
+    outline: 0;
+    color: #ffffff;
   }
 }
 
