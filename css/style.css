@@ -266,7 +266,7 @@
 
 @keyframes bounce {
   0% {
-    transform: translateY(-500px);
+    transform: translateY(-200px);
     animation-timing-function: ease-in;
     opacity: 0;
   }
@@ -276,7 +276,7 @@
     opacity: 1;
   }
   55% {
-    transform: translateY(-65px);
+    transform: translateY(-25px);
     animation-timing-function: ease-in;
   }
   72% {
@@ -284,7 +284,7 @@
     animation-timing-function: ease-out;
   }
   81% {
-    transform: translateY(-28px);
+    transform: translateY(-9px);
     animation-timing-function: ease-in;
   }
   90% {
@@ -292,7 +292,7 @@
     animation-timing-function: ease-out;
   }
   95% {
-    transform: translateY(-8px);
+    transform: translateY(-4px);
     animation-timing-function: ease-in;
   }
   100% {
