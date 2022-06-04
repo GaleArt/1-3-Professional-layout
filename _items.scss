@@ -171,10 +171,20 @@ $f-list-path: url(../assets/filter.jpg);
     border: 1px solid transparent;
     text-decoration: none;
   }
+  i {
+    font-size: 19px;
+    font-weight: bold;
+    color:#000000;
+  }
 }
-.breadcrumb a:hover, .breadcrumb a:focus {
+.breadcrumb a:hover,
+.breadcrumb a:focus,
+i:hover,
+i:focus {
   border-color: #fff;
   background-color: #fdfdfd;
+  color: #EF5B70;
+  transform: scale(1.05);
 }
 .breadcrumb a.active,
 .breadcrumb a:active {
