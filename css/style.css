@@ -544,6 +544,7 @@ html, body {
   text-align: center;
   width: 360px;
   height: 260px;
+  margin: 0;
 }
 
 .gallery__img__child:hover p {
