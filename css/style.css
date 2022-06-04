@@ -330,8 +330,33 @@
   width: 100%;
 }
 
+@keyframes vibrate {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
 html, body {
   height: 100%;
+}
+
+section, figure {
+  margin: 0;
 }
 
 .wrapper {
@@ -424,7 +449,7 @@ html, body {
   background: #FFFFFF;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   position: absolute;
-  top: 59px;
+  top: 75px;
   height: 764px;
   width: 232px;
   right: -232px;
@@ -441,7 +466,7 @@ html, body {
   color: #F16D7F;
 }
 
-.menu-box__header {
+.menu-box h2 {
   font-family: "Lato";
   font-style: normal;
   font-weight: 700;
@@ -451,7 +476,7 @@ html, body {
   line-height: 17px;
 }
 
-.menu-box__item-text {
+.menu-box h3 {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
@@ -670,8 +695,7 @@ html, body {
 }
 
 .featured__card_overlay__btn:hover {
-  background: rgba(58, 56, 56, 0.86);
-  transition: background .3s;
+  animation: vibrate 0.3s linear both;
 }
 
 .featured__card_overlay:hover {
