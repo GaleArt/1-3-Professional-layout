@@ -287,6 +287,7 @@ section, figure {
     top: -10px;
     right: -10px;
   }
+  &__logo:hover {transform: scale(1.05);}
   &__search:hover svg path,
   &__burger:hover svg path,
   &__account:hover svg path,
@@ -294,6 +295,13 @@ section, figure {
 }
 
 .menu-box {
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  ul, li {
+    list-style: none;
+  }
   z-index: 5;
   background: #FFFFFF;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);

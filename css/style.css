@@ -437,6 +437,10 @@ section, figure {
   right: -10px;
 }
 
+.menu__logo:hover {
+  transform: scale(1.05);
+}
+
 .menu__search:hover svg path,
 .menu__burger:hover svg path,
 .menu__account:hover svg path,
@@ -453,6 +457,15 @@ section, figure {
   height: 764px;
   width: 232px;
   right: -232px;
+}
+
+.menu-box ul {
+  padding: 0;
+  margin: 0;
+}
+
+.menu-box ul, .menu-box li {
+  list-style: none;
 }
 
 .menu-box__btn {
