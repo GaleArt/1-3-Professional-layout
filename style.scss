@@ -691,7 +691,7 @@ section, figure {
 
 .pages {
   margin: 39px 0;
-  &__header {
+  &__head {
     @include flexible ();
     height: 148px;
     background-color: #F8F3F4;

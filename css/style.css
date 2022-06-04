@@ -1001,7 +1001,7 @@ section, figure {
   margin: 39px 0;
 }
 
-.pages__header {
+.pages__head {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1009,14 +1009,14 @@ section, figure {
   background-color: #F8F3F4;
 }
 
-.pages__header__text {
+.pages__head__text {
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-between;
 }
 
-.pages__header__text ul {
+.pages__head__text ul {
   display: grid;
   gap: .5rem;
   grid-template-columns: 1fr 1fr 3fr;
@@ -1024,12 +1024,12 @@ section, figure {
   list-style: none;
 }
 
-.pages__header__text li + li:before {
+.pages__head__text li + li:before {
   content: "/\00a0";
   color: #636363;
 }
 
-.pages__header__text li a {
+.pages__head__text li a {
   font-family: "Lato";
   font-style: normal;
   font-weight: 300;
@@ -1040,14 +1040,14 @@ section, figure {
   color: #636363;
 }
 
-.pages__header__text li a:hover,
-.pages__header__text li a:active,
-.pages__header__text .Selected {
+.pages__head__text li a:hover,
+.pages__head__text li a:active,
+.pages__head__text .Selected {
   color: #F16D7F;
   font-weight: bold;
 }
 
-.pages__header__text span {
+.pages__head__text span {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
