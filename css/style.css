@@ -366,17 +366,25 @@ html, body {
   justify-content: space-between;
 }
 
+.menu ul {
+  padding: 0;
+}
+
+.menu ul, .menu li {
+  list-style: none;
+}
+
 .menu__main, .menu__users {
   display: flex;
   align-items: center;
 }
 
 .menu__search {
-  padding-left: 41px;
+  margin-left: 41px;
 }
 
 .menu__account {
-  padding: 0 33px;
+  margin: 0 33px;
 }
 
 .menu__basket {
