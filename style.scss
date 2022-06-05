@@ -659,6 +659,71 @@ section, figure {
   }
 }
 
+.cart {
+  &__area {
+    width: 57%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 7%;
+  }
+  &__item {
+    display: flex;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    img {
+      width: 40%;
+    }
+    h3 {
+      padding: 0;
+      margin: 0;
+      @include txt-m ();
+      font-size: 24px;
+      line-height: 29px;
+      color: #222222;
+    }
+    p {
+      padding: 0;
+      margin: 0;
+      @include txt-m ();
+      font-size: 22px;
+      line-height: 26px;
+      color: #575757;
+    }
+    span {
+      color: #F16D7F;
+    }
+    input {
+      appearance: none;
+      border: 1px solid #EAEAEA;
+      width: 10%;
+      @include txt-m ();
+      text-align: center;
+      font-size: 18px;
+      line-height: 22px;
+      color: #656565;
+    }
+    input[type='number'] {
+      -moz-appearance:textfield;
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+  }
+  &__item:first-child {
+    margin-bottom: 7%;
+  }
+  &__buttons {
+    @include flexible();
+    justify-content: space-between;
+  }
+  &__button {
+    
+  }
+  &__button-close {
+
+  }
+}
+
 .registration {
   display: flex;
   padding: 5.6% 0 8.4%;
