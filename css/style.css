@@ -128,6 +128,15 @@
   }
 }
 
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* filter (_items.scss) */
 .filter__content {
   margin-top: 31px;
@@ -1285,8 +1294,18 @@ section, figure {
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
 
-.cart__item img {
+.cart__item a {
   width: 40%;
+}
+
+.cart__item a:hover {
+  animation: fade 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.cart__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .cart__item h3 {

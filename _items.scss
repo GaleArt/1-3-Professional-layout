@@ -245,6 +245,23 @@
             transform: translateY(-60px);
   }
 }
+ @-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 /* filter (_items.scss) */
 $f-list-path: url(../assets/filter.jpg);
