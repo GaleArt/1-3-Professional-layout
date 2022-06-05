@@ -660,6 +660,8 @@ section, figure {
 }
 
 .cart {
+  display: flex;
+  justify-content: space-between;
   &__area {
     width: 57%;
     display: flex;
@@ -721,15 +723,23 @@ section, figure {
   &__item:first-child {
     margin-bottom: 7%;
   }
+  &__item:hover {
+    transform: scale(1.01);
+  }
   &__buttons {
     @include flexible();
     justify-content: space-between;
   }
-  &__button {
-
-  }
-  &__button-close {
-
+  
+  &__price {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 7%;
+    form {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 

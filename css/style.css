@@ -1282,6 +1282,11 @@ section, figure {
   color: #ffffff;
 }
 
+.cart {
+  display: flex;
+  justify-content: space-between;
+}
+
 .cart__area {
   width: 57%;
   display: flex;
@@ -1366,11 +1371,27 @@ section, figure {
   margin-bottom: 7%;
 }
 
+.cart__item:hover {
+  transform: scale(1.01);
+}
+
 .cart__buttons {
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-between;
+}
+
+.cart__price {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 7%;
+}
+
+.cart__price form {
+  display: flex;
+  flex-direction: column;
 }
 
 .registration {
