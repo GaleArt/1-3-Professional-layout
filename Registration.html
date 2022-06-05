@@ -139,11 +139,11 @@
       </section>
 
       <section class="registration container">
-        <selection class="registration__input">
+        <form class="registration__input">
           <span>Your Name</span>
           <input type="text" placeholder="First Name">
           <input type="text" placeholder="Last Name">
-          <label for="regMale">
+          <label for="regSex">
             <input type="radio" id="regMale" 
             name="sex" value="male">Male
             <input type="radio" id="regFemale"
@@ -154,10 +154,10 @@
           <input type="password" placeholder="Password">
           <p>Please use 8 or more characters, with at least 1 
             number and a mixture of uppercase and lowercase letters</p>
-          <div class="reg_btn">
-            <a href="#">join now <i>➔</i></a>
-          </div>
-        </selection>
+
+          <button onclick="document.location='index.html'" 
+          class="reg_btn btn-style">join now <i>➔</i></button>
+        </form>
         <article class="registration__text">
           <span>loyalty has its perks</span>
           <p>Get in on the loyalty program where you can earn points 

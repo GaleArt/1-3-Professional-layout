@@ -327,12 +327,28 @@ $f-list-path: url(../assets/filter.jpg);
 /* buttons (_items.scss) */
 .reg_btn {
   width: 46%;
-  a {
-    padding: 7% 10%;
+  button {
     @include txt-m ();
+    text-transform: $ttu;
     @include flexible ();
     justify-content: space-around;
-    text-transform: $ttu;
+    padding: 7% 10%;
+  }
+  &__button {
+    background-color: transparent;
+    border: 1px solid #F26376;
+    color: #F26376;
+  }
+  button:after {
+    background: #ffffff;
+  }
+  button:hover {
+    border: 1px solid transparent;
+    outline: 0;
+    color: #ffffff;
+  }
+
+  a {
     text-decoration: none;
     color: #FFFFFF;
     background: #F16D7F;
