@@ -223,6 +223,26 @@
             transform: translate(0);
   }
 }
+ @-webkit-keyframes slide {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-60px);
+            transform: translateY(-60px);
+  }
+}
+@keyframes slide {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-60px);
+            transform: translateY(-60px);
+  }
+}
 
 html, body {
   height: 100%;
@@ -770,7 +790,7 @@ section, figure {
       outline: none;
       position: absolute;
 		  top: 50%;
-      left: calc(50% - 570px);
+      left: calc(50% - 750px);
 		  width: 47px;
 		  height: 47px;
 		  transform: translateY(-50%) translateZ(0);
@@ -783,7 +803,7 @@ section, figure {
     }
     &__btn__next {
       left: auto;
-			right: calc(50% - 570px);
+			right: calc(50% - 750px);
     }
     &__wrap {
       display: flex;
@@ -813,10 +833,11 @@ section, figure {
     @include flexible ();
     flex-direction: column;
     text-align: center;
-    margin-top: -60px;
     height: 600px;
     border: 1px solid #EAEAEA;
     background: #FFFFFF;
+    -webkit-animation: slide 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+            animation: slide 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
     &__header {
       @include txt-s ();
       margin: 0;
@@ -860,22 +881,22 @@ section, figure {
       border-top: 1px solid #EAEAEA;
     }
     &__btn {
+      button {padding: 0;}
       @include flexible ();
       @include txt-mm ();
-      width: 210px;
-      height: 48px;
-      background: #ffffff;
-      border: 1px solid #FF6A6A;
+      padding: 14px 38px;
+      background-color: transparent;
+      border: 1px solid #F26376;
       color: #F26376;
-      &__text {
-        padding-left: 22px;
-      }
+    }
+    &__btn:after {
+      background: #F26376;
     }
     &__btn:hover {
-      background: #F16D7F;
-      color: #FFFFFF;
+      border: 1px solid transparent;
+      outline: 0;
+      color: #ffffff;
     }
-    &__btn:hover svg path {fill: #ffffff;}
   }
 }
 

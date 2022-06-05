@@ -231,16 +231,8 @@
   text-decoration: none;
 }
 
-.breadcrumb i {
-  font-size: 19px;
-  font-weight: bold;
-  color: #000000;
-}
-
 .breadcrumb a:hover,
-.breadcrumb a:focus,
-i:hover,
-i:focus {
+.breadcrumb a:focus {
   border-color: #fff;
   background-color: #fdfdfd;
   color: #EF5B70;
@@ -256,6 +248,20 @@ i:focus {
   line-height: 19px;
   font-weight: 300;
   color: #EF5B70;
+}
+
+.bread {
+  font-size: 19px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.bread:hover,
+.bread:focus {
+  border-color: #fff;
+  background-color: #fdfdfd;
+  color: #EF5B70;
+  transform: scale(1.05);
 }
 
 @keyframes puff {
@@ -359,6 +365,15 @@ i:focus {
   }
   100% {
     transform: translate(0);
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-60px);
   }
 }
 
@@ -1112,7 +1127,7 @@ section, figure {
   outline: none;
   position: absolute;
   top: 50%;
-  left: calc(50% - 570px);
+  left: calc(50% - 750px);
   width: 47px;
   height: 47px;
   transform: translateY(-50%) translateZ(0);
@@ -1126,7 +1141,7 @@ section, figure {
 
 .product__carousel__btn__next {
   left: auto;
-  right: calc(50% - 570px);
+  right: calc(50% - 750px);
 }
 
 .product__carousel__wrap {
@@ -1162,10 +1177,10 @@ section, figure {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  margin-top: -60px;
   height: 600px;
   border: 1px solid #EAEAEA;
   background: #FFFFFF;
+  animation: slide 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s both;
 }
 
 .product__collection__header {
@@ -1235,24 +1250,24 @@ section, figure {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  width: 210px;
-  height: 48px;
-  background: #ffffff;
-  border: 1px solid #FF6A6A;
+  padding: 14px 38px;
+  background-color: transparent;
+  border: 1px solid #F26376;
   color: #F26376;
 }
 
-.product__collection__btn__text {
-  padding-left: 22px;
+.product__collection__btn button {
+  padding: 0;
+}
+
+.product__collection__btn:after {
+  background: #F26376;
 }
 
 .product__collection__btn:hover {
-  background: #F16D7F;
-  color: #FFFFFF;
-}
-
-.product__collection__btn:hover svg path {
-  fill: #ffffff;
+  border: 1px solid transparent;
+  outline: 0;
+  color: #ffffff;
 }
 
 .registration {

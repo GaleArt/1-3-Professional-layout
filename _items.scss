@@ -171,16 +171,9 @@ $f-list-path: url(../assets/filter.jpg);
     border: 1px solid transparent;
     text-decoration: none;
   }
-  i {
-    font-size: 19px;
-    font-weight: bold;
-    color:#000000;
-  }
 }
 .breadcrumb a:hover,
-.breadcrumb a:focus,
-i:hover,
-i:focus {
+.breadcrumb a:focus {
   border-color: #fff;
   background-color: #fdfdfd;
   color: #EF5B70;
@@ -191,4 +184,16 @@ i:focus {
   @include txt-mm ();
   font-weight: 300;
   color: #EF5B70;
+}
+.bread {
+  font-size: 19px;
+  font-weight: bold;
+  color:#000000;
+}
+.bread:hover,
+.bread:focus {
+  border-color: #fff;
+  background-color: #fdfdfd;
+  color: #EF5B70;
+  transform: scale(1.05);
 }
