@@ -13,6 +13,121 @@
   width: 100%;
 }
 
+/* animations (_items.scss) */
+
+@keyframes puff {
+  0% {
+    transform: scale(1.5);
+    filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.puff {
+  animation: puff 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2s both;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-200px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateY(-25px);
+    animation-timing-function: ease-in;
+  }
+  72% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateY(-9px);
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateY(-4px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+}
+
+.bounce {
+  animation: bounce 3s both;
+}
+
+.btn-style {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 150ms ease-in-out;
+  cursor: pointer;
+}
+
+.btn-style:after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 100%;
+  z-index: -1;
+  transition: width 150ms ease-in-out;
+}
+
+.btn-style:hover:after {
+  width: 100%;
+}
+
+@keyframes vibrate {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-60px);
+  }
+}
+
 /* filter (_items.scss) */
 .filter__content {
   margin-top: 31px;
@@ -262,119 +377,6 @@
   background-color: #fdfdfd;
   color: #EF5B70;
   transform: scale(1.05);
-}
-
-@keyframes puff {
-  0% {
-    transform: scale(1.5);
-    filter: blur(4px);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    filter: blur(0px);
-    opacity: 1;
-  }
-}
-
-.puff {
-  animation: puff 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2s both;
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateY(-200px);
-    animation-timing-function: ease-in;
-    opacity: 0;
-  }
-  38% {
-    transform: translateY(0);
-    animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  55% {
-    transform: translateY(-25px);
-    animation-timing-function: ease-in;
-  }
-  72% {
-    transform: translateY(0);
-    animation-timing-function: ease-out;
-  }
-  81% {
-    transform: translateY(-9px);
-    animation-timing-function: ease-in;
-  }
-  90% {
-    transform: translateY(0);
-    animation-timing-function: ease-out;
-  }
-  95% {
-    transform: translateY(-4px);
-    animation-timing-function: ease-in;
-  }
-  100% {
-    transform: translateY(0);
-    animation-timing-function: ease-out;
-  }
-}
-
-.bounce {
-  animation: bounce 3s both;
-}
-
-.btn-style {
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  transition: color 150ms ease-in-out;
-  cursor: pointer;
-}
-
-.btn-style:after {
-  content: '';
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0;
-  height: 100%;
-  z-index: -1;
-  transition: width 150ms ease-in-out;
-}
-
-.btn-style:hover:after {
-  width: 100%;
-}
-
-@keyframes vibrate {
-  0% {
-    transform: translate(0);
-  }
-  20% {
-    transform: translate(-2px, 2px);
-  }
-  40% {
-    transform: translate(-2px, -2px);
-  }
-  60% {
-    transform: translate(2px, 2px);
-  }
-  80% {
-    transform: translate(2px, -2px);
-  }
-  100% {
-    transform: translate(0);
-  }
-}
-
-@keyframes slide {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-60px);
-  }
 }
 
 html, body {
@@ -854,6 +856,7 @@ section, figure {
   height: 448px;
   background: no-repeat center url("../assets/footer.jpg");
   background-position: bottom;
+  background-size: 100% auto;
 }
 
 .footer__area {
