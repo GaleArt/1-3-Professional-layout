@@ -230,49 +230,30 @@
 /* buttons (_items.scss) */
 .reg_btn {
   width: 46%;
-}
-
-.reg_btn button {
+  padding: 4.5% 8.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   text-transform: uppercase;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
-  padding: 7% 10%;
-}
-
-.reg_btn__button {
-  background-color: transparent;
-  border: 1px solid #F26376;
-  color: #F26376;
-}
-
-.reg_btn button:after {
-  background: #ffffff;
-}
-
-.reg_btn button:hover {
-  border: 1px solid transparent;
-  outline: 0;
-  color: #ffffff;
-}
-
-.reg_btn a {
-  text-decoration: none;
+  text-align: center;
   color: #FFFFFF;
   background: #F16D7F;
-  border: 1px solid transparent;
+  border: 1px solid #F16D7F;
 }
 
-.reg_btn a:hover {
-  border: 1px solid #F16D7F;
-  color: #F16D7F;
+.reg_btn:after {
   background: #ffffff;
+}
+
+.reg_btn:hover {
+  color: #F16D7F;
+  outline: 0;
 }
 
 .reg_btn i {
