@@ -8,3 +8,9 @@ function closeMenu() {
 function closeCart() {
     alert('удалил :)');
 }
+function closeCartAll() {
+    alert('удалил всё :)');
+}
+function regAlert() {
+    alert('Зарегистрировано! :)');
+}

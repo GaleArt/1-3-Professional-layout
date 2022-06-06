@@ -769,10 +769,74 @@ section, figure {
     width: 32%;
     display: flex;
     flex-direction: column;
-    padding-top: 7%;
+    padding-top: 8%;
     form {
       display: flex;
       flex-direction: column;
+    }
+    aside {
+      @include flexible();
+      flex-direction: column;
+      width: 76%;
+      background: #F5F3F3;
+      margin-top: 16%;
+      padding: 12%;
+      hr {
+        border: none;
+        color: #E2E2E2;
+        background-color: #E2E2E2;
+        height: 1px;
+        width: 100%;
+        margin: 21px 0 17px;
+      }
+      h4 {
+        margin: 0;
+        padding: 0 0 14px;
+        @include flexible();
+        @include txt-m ();
+        font-size: 11px;
+        line-height: 13px;
+        color: #4A4A4A;
+        align-self: flex-end;
+        margin-right: -9px;
+        span {
+          padding-left: 14px;
+        }
+      }
+      p {
+        margin: 0;
+        padding: 0;
+        @include flexible();
+        @include txt-s ();
+        align-self: flex-end;
+        font-size: 16px;
+        line-height: 19px;
+        color: #222222;
+        margin-right: -6px;
+        span {
+          color: #F16D7F;
+          font-weight: bold;
+          padding-left: 14px;
+        }
+      }
+      button {
+        width: 100%;
+        @include txt-mm ();
+        font-weight: 300;
+        color: #FFFFFF;
+        background: #F16D7F;
+        border: 1px solid #F16D7F;
+        text-align: center;
+        padding: 5.3% 15%;
+        &:after {
+          background: #F1F1F1;
+        }
+        &:hover {
+          border: 1px solid #F16D7F;
+          color: #F16D7F;
+          outline: 0;
+        }
+      }
     }
     h3 {
       @include txt-s ();
@@ -796,8 +860,11 @@ section, figure {
       outline: none;
       color: #222222;
     }
-    input:nth-child(2n) {
+    input:nth-of-type(2) {
       margin: 5.5% 0;
+    }
+    input:nth-of-type(3) {
+      margin: 0 0 5.7%;
     }
     button {
       width: 28%;
