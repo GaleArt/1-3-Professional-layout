@@ -666,11 +666,18 @@ section, figure {
     width: 57%;
     display: flex;
     flex-direction: column;
-    padding-top: 7%;
+    padding-top: 8%;
   }
   &__item {
     display: flex;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 22px 22px 22px 31px;
+      position: relative;
+    }
     a {
       width: 40%;
     }
@@ -684,8 +691,7 @@ section, figure {
       object-fit: cover;	
     }
     h3 {
-      padding: 0;
-      margin: 0;
+      margin: 0 93px 42px 0;
       @include txt-m ();
       font-size: 24px;
       line-height: 29px;
@@ -730,7 +736,35 @@ section, figure {
     @include flexible();
     justify-content: space-between;
   }
-  
+  &__button {
+    button {padding: 0;}
+    @include txt-m ();
+    font-weight: 300;
+    text-transform: $ttu;
+    padding: 2.4% 6%;
+    background-color: transparent;
+    border: 1px solid #F16D7F;
+    color: #F16D7F;
+    margin: 11% 0 19.5%;
+  }
+  &__button:after {
+    background: #F16D7F;
+  }
+  &__button:hover {
+    border: 1px solid transparent;
+    outline: 0;
+    color: #ffffff;
+  }
+  &__button-close {
+    position: absolute;
+    right: 0;
+    border: none;
+    background: none;
+    font-size: 24px;
+    &:hover {
+      color: #F16D7F;
+    }
+  }
   &__price {
     width: 32%;
     display: flex;
@@ -739,6 +773,51 @@ section, figure {
     form {
       display: flex;
       flex-direction: column;
+    }
+    h3 {
+      @include txt-s ();
+      font-size: 16px;
+      line-height: 19px;
+      color: #222222;
+    }
+    input {
+      @include flexible ();
+      @include txt-s ();
+      font-size: 13px;
+      line-height: 16px;
+      background: transparent;
+      color: #B1B1B1;
+      border: 1px solid #A4A4A4;
+      padding: 3.4% 4.4%;
+    }
+    input:hover,
+    input:focus {
+      border: 1px solid #F16D7F;
+      outline: none;
+      color: #222222;
+    }
+    input:nth-child(2n) {
+      margin: 5.5% 0;
+    }
+    button {
+      width: 28%;
+      @include txt-s ();
+      font-size: 11px;
+      line-height: 13px;
+      color: #4A4A4A;
+      text-transform: $ttu;
+      padding: 2.8% 3.8%;
+      margin-top: 1.11%;
+      background-color: transparent;
+      border: 1px solid #A4A4A4;
+    }
+    button:after {
+      background: #F16D7F;
+    }
+    button:hover {
+      border: 1px solid transparent;
+      outline: 0;
+      color: #ffffff;
     }
   }
 }

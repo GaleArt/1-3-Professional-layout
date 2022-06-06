@@ -5,3 +5,6 @@ function showMenu() {
 function closeMenu() {
     document.getElementById('menu').style.display = "none";
 }
+function closeCart() {
+    alert('удалил :)');
+}

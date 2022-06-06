@@ -144,43 +144,45 @@
             <figure class="cart__item">
               <a href="Product.html">
                 <img src="assets/featured-3.jpg" alt="card-3"></a>
-              <form action="cart option">
+              <form action="Cart.html">
                 <h3>MANGO  PEOPLE  T-SHIRT</h3>
                 <p>Price: <span>$300</span></p>
                 <p>Color: Red</p>
                 <p>Size: Xl</p>
                 <p>Quantity: 
-                  <input type="number" name="" min="1" max="10" id=""></p>
-                <button class="cart__button-close"><i class="fa fa-times" aria-hidden="true"></i></button>
+                  <input type="number" name="" min="1" max="10" id="item1" value="1"></p>
+                <button onclick="closeCart();" class="cart__button-close">
+                  <i class="fa-solid fa-xmark"></i></button>
               </form>
             </figure>
             <figure class="cart__item">
               <a href="Product.html">
                 <img src="assets/featured-2-2.jpg" alt="card-2-2"></a>
-              <form action="cart option">
+              <form>
                 <h3>MANGO  PEOPLE  T-SHIRT</h3>
                 <p>Price: <span>$300</span></p>
                 <p>Color: Red</p>
                 <p>Size: Xl</p>
                 <p>Quantity: 
-                  <input type="number" name="" min="1" max="10" id=""></p>
-                <button class="cart__button-close"><i class="fa fa-times" aria-hidden="true"></i></button>
+                  <input type="number" name="" min="1" max="10" id="item2" value="1"></p>
+                <button onclick="closeCart();" class="cart__button-close">
+                  <i class="fa-solid fa-xmark"></i></button>
               </form>
             </figure>
             <div class="cart__buttons">
-              <button onclick="document.location='Catalog.html'" 
+              <button onclick="closeCart();" type="submit"
                 class="cart__button btn-style">clear shopping cart</button>
-              <button onclick="document.location='Catalog.html'" 
+              <button onclick="document.location='Cart.html'" type="submit"
                 class="cart__button btn-style">continue shopping</button>
             </div>
           </div>
           <div class="cart__price">
             <form action="quote">
               <h3>SHIPPING ADRESS</h3>
-              <input type="text">
-              <input type="text">
-              <input type="text">
-              <button>GET A QUOTE</button>
+              <input type="text" placeholder="Bangladesh">
+              <input type="text" placeholder="State">
+              <input type="text" placeholder="Postcode / Zip">
+              <button class="btn-style">get a quote</button>
             </form>
 
           </div>
@@ -233,6 +235,7 @@
     </section>
   </div>
   <script src="homework.js"></script>
+  <script src="https://kit.fontawesome.com/592f12273b.js" crossorigin="anonymous"></script>
 </body>
 </html>
 
