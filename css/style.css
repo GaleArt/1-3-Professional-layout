@@ -1286,7 +1286,7 @@ section, figure {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  padding: 14px 38px;
+  padding: 14px 38px 8px;
   background-color: transparent;
   border: 1px solid #F26376;
   color: #F26376;
@@ -1294,6 +1294,10 @@ section, figure {
 
 .product__collection__btn button {
   padding: 0;
+}
+
+.product__collection__btn-bsk {
+  padding-right: 22px;
 }
 
 .product__collection__btn:after {
@@ -1304,6 +1308,14 @@ section, figure {
   border: 1px solid transparent;
   outline: 0;
   color: #ffffff;
+}
+
+.product__collection__btn svg path {
+  fill: #F26376;
+}
+
+.product__collection__btn:hover svg path {
+  fill: #ffffff;
 }
 
 .cart {

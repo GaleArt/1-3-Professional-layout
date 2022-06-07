@@ -648,10 +648,13 @@ section, figure {
       button {padding: 0;}
       @include flexible ();
       @include txt-mm ();
-      padding: 14px 38px;
+      padding: 14px 38px 8px;
       background-color: transparent;
       border: 1px solid #F26376;
       color: #F26376;
+      &-bsk {
+        padding-right: 22px;
+      }
     }
     &__btn:after {
       background: #F26376;
@@ -660,6 +663,12 @@ section, figure {
       border: 1px solid transparent;
       outline: 0;
       color: #ffffff;
+    }
+    &__btn svg path {
+      fill: #F26376;
+    }
+    &__btn:hover svg path {
+      fill: #ffffff;
     }
   }
 }
