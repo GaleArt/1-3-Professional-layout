@@ -194,34 +194,69 @@
             <a href="#" class="filter__text">Vetements</a>
           </details>
         </details>
-        <form class="select">
-          <div class="select__list">
-            <select name="choose_trend" id="choose_trend">
-              <option value="" hidden disabled selected>trending now</option>
-              <option value="1">White</option>
-              <option value="2">Black</option>
-              <option value="3">Grey</option>
-              <option value="4">Brown</option>
-              <option value="5">Blue</option>
-            </select>
-          </div>
-          <div class="select__list">
-            <select name="choose_size" id="choose_size">
-              <option value="" hidden disabled selected>Size</option>
-              <option value="1">XS</option>
-              <option value="2">S</option>
-              <option value="3">M</option>
-              <option value="4">L</option>
-            </select>
-          </div>
-          <div class="select__list">
-           <select name="choose_price" id="choose_price">
-            <option value="" hidden disabled selected>price</option>
-              <option value="1">0-1000</option>
-              <option value="2">>1000</option>
-            </select>
-          </div>
-        </form>
+        <div class="select">
+          <details>
+            <summary>trending now
+              <i class="fa-solid fa-angle-down"></i>
+            </summary>
+              <div class="select__area">
+                <div class="select__item">
+                  <input type="checkbox" id="paris" name="paris" value="yes">
+                  <label for="paris">Paris 2022</label>
+                </div>
+                <div class="select__item">
+                  <input type="checkbox" id="ny" name="ny" value="yes">
+                  <label for="ny">New York 2022</label>
+                </div>
+                <div class="select__item">
+                  <input type="checkbox" id="london" name="london" value="yes">
+                  <label for="london">London 2022</label>
+                </div>
+                <div class="select__item">
+                  <input type="checkbox" id="milan" name="milan" value="yes">
+                  <label for="milan">Milan 2022</label>
+                </div>
+              </div>
+          </details>
+          <details>
+            <summary>Size
+              <i class="fa-solid fa-angle-down"></i>
+            </summary>
+              <div class="select__area">
+                <div class="select__item">
+                  <input type="checkbox" id="xl-size" name="xl-size" value="yes">
+                  <label for="xl-size">XS</label>
+                </div>
+                <div class="select__item">
+                  <input type="checkbox" id="s-size" name="s-size" value="yes">
+                  <label for="s-size">S</label>
+                </div>
+                <div class="select__item">
+                  <input type="checkbox" id="m-size" name="m-size" value="yes">
+                  <label for="m-size">M</label>
+                </div>
+                <div class="select__item">
+                  <input type="checkbox" id="l-size" name="l-size" value="yes">
+                  <label for="l-size">L</label>
+                </div>
+              </div>
+          </details>
+          <details>
+            <summary>price
+              <i class="fa-solid fa-angle-down"></i>
+            </summary>
+              <div class="select__area">
+                <div class="select__item">
+                  <input type="checkbox" id="thousand" name="thousand" value="yes">
+                  <label for="thousand">0-1000</label>
+                </div>
+                <div class="select__item">
+                  <input type="checkbox" id="over-thousand" name="over-thousand" value="yes">
+                  <label for="over-thousand">>1000</label>
+                </div>
+              </div>
+          </details>
+        </div>
       </section>
 
       <section class="catalog__featured container">

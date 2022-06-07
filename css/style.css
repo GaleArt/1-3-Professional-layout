@@ -277,46 +277,64 @@
 /* select-list (_items.scss) */
 .select {
   display: flex;
-  justify-content: center;
-  align-items: center;
   z-index: 15;
   position: absolute;
   top: 0;
-  left: 390px;
+  left: 34.2%;
   margin-top: 31px;
   padding: 20px 0;
-  width: 360px;
+  width: 380px;
 }
 
-.select__list {
+.select__area {
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  background-color: #fff;
+  padding: 7px;
+}
+
+.select__item {
+  display: flex;
+  align-items: center;
+}
+
+.select__item label {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #6F6E6E;
+}
+
+.select__item input {
+  margin: 2px 9px 4px 2px;
+}
+
+.select details {
   position: relative;
   margin-right: 28px;
+  display: flex;
+  flex-direction: column;
 }
 
-.select__list select {
+.select summary {
+  display: flex;
+  padding: 5px 0;
+  margin: 0;
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   text-transform: uppercase;
-  appearance: none;
-  background: none;
-  border: none;
-  cursor: pointer;
   color: #6F6E6E;
-  outline: 0;
-  padding-right: 10px;
-  width: 100%;
+  cursor: pointer;
+  list-style-type: none;
+  margin-right: 10px;
 }
 
-.select__list option {
-  text-transform: uppercase;
-}
-
-.select__list:after {
-  position: absolute;
-  content: url(../assets/appearance.png);
+.select summary i {
+  padding-left: 10px;
 }
 
 /* breadcrumb (_items.scss) */

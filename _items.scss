@@ -368,39 +368,51 @@ $f-list-path: url(../assets/filter.jpg);
 
 /* select-list (_items.scss) */
 .select {
-  @include flexible ();
+  display: flex;
   z-index: 15;
   position: absolute;
   top: 0;
-  left: 390px;
+  left: 34.2%;
   margin-top: 31px;
   padding: 20px 0;
-  width: 360px;
-  &__list {
-    position: relative;
-    margin-right: 28px;
-    select {
-      @include txt-m ();
-      text-transform: $ttu;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      -ms-appearance: none;
-      appearance: none;
-      background: none;
-      border: none;
-      cursor: pointer;
+  width: 380px;
+  &__area {
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    background-color: #fff;
+    padding: 7px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    label {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
       color: #6F6E6E;
-      outline: 0;
-      padding-right: 10px;
-      width: 100%;
     }
-    option {
-      text-transform: $ttu;
+    input {
+      margin: 2px 9px 4px 2px;
     }
   }
-  &__list:after {
-    position: absolute;
-    content: url(../assets/appearance.png);
+  details {
+    position: relative;
+    margin-right: 28px;
+    display: flex;
+    flex-direction: column;
+  }
+  summary {
+    display: flex;
+    padding: 5px 0;
+    margin: 0;
+    @include txt-m ();
+    text-transform: $ttu;
+    color: #6F6E6E;
+    cursor: pointer;
+    list-style-type: none;
+    margin-right: 10px;
+    i {padding-left: 10px}
   }
 }
 
