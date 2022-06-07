@@ -927,7 +927,7 @@ section, figure {
     input[type="radio"]:focus {
       outline: none;
     }
-    label {
+    div {
       @include flexible ();
       @include txt-s ();
       margin: 32px 0;

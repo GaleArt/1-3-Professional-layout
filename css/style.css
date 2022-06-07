@@ -1647,7 +1647,7 @@ section, figure {
   outline: none;
 }
 
-.registration__input label {
+.registration__input div {
   display: flex;
   justify-content: center;
   align-items: center;
