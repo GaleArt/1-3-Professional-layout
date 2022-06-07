@@ -181,39 +181,82 @@
          $561
         </div>
         <div class="product__collection__choose">
-          <select class="product__collection__choose__item" name="choose_color" id="choose_color">
-            <option value="">CHOOSE COLOR</option>
-            <option value="1">Белый</option>
-            <option value="2">Синий</option>
-            <option value="3">Зеленый</option>
-            <option value="4">Желтый</option>
-            <option value="5">Красный</option>
-            <option value="6">Оранжевый</option>
-            <option value="7">Черный</option>
-          </select>
-        
-          <select class="product__collection__choose__item" name="choose_size" id="choose_size">
-            <option value="">CHOOSE SIZE</option>
-            <option value="1">M</option>
-            <option value="2">L</option>
-            <option value="3">XL</option>
-            <option value="4">2XL</option>
-            <option value="5">3XL</option>
-          </select>
-        
-          <select class="product__collection__choose__item" name="choose_quantity" id="choose_quantity">
-            <option value="">QUANTITY</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-          </select>
+
+          <div class="select product__collection__choose__item">
+            <details>
+              <summary>choose color
+                <i class="fa-solid fa-angle-down"></i>
+              </summary>
+                <div class="select__area">
+                  <div class="select__item">
+                    <input type="checkbox" id="black" name="black" value="yes">
+                    <label for="black">Black</label>
+                  </div>
+                  <div class="select__item">
+                    <input type="checkbox" id="white" name="white" value="yes">
+                    <label for="white">White</label>
+                  </div>
+                  <div class="select__item">
+                    <input type="checkbox" id="blue" name="blue" value="yes">
+                    <label for="blue">Blue</label>
+                  </div>
+                  <div class="select__item">
+                    <input type="checkbox" id="pink" name="pink" value="yes">
+                    <label for="pink">Pink</label>
+                  </div>
+                </div>
+            </details>
+            <details>
+              <summary>Choose size
+                <i class="fa-solid fa-angle-down"></i>
+              </summary>
+                <div class="select__area">
+                  <div class="select__item">
+                    <input type="checkbox" id="xl-size" name="xl-size" value="yes">
+                    <label for="xl-size">XS</label>
+                  </div>
+                  <div class="select__item">
+                    <input type="checkbox" id="s-size" name="s-size" value="yes">
+                    <label for="s-size">S</label>
+                  </div>
+                  <div class="select__item">
+                    <input type="checkbox" id="m-size" name="m-size" value="yes">
+                    <label for="m-size">M</label>
+                  </div>
+                  <div class="select__item">
+                    <input type="checkbox" id="l-size" name="l-size" value="yes">
+                    <label for="l-size">L</label>
+                  </div>
+                </div>
+            </details>
+            <details>
+              <summary>quantity
+                <i class="fa-solid fa-angle-down"></i>
+              </summary>
+                <div class="select__area">
+                  <div class="select__item">
+                    <input type="checkbox" id="qOne" name="qOne" value="yes">
+                    <label for="qOne">1</label>
+                  </div>
+                  <div class="select__item">
+                    <input type="checkbox" id="qTwo" name="qTwo" value="yes">
+                    <label for="qTwo">2</label>
+                  </div>
+                  <div class="select__item">
+                    <input type="checkbox" id="qThree" name="qThree" value="yes">
+                    <label for="qThree">3</label>
+                  </div>
+                  <div class="select__item">
+                    <input type="checkbox" id="qFour" name="qFour" value="yes">
+                    <label for="qFour">4</label>
+                  </div>
+                  <div class="select__item">
+                    <input type="checkbox" id="qFive" name="qFive" value="yes">
+                    <label for="qFive">5</label>
+                  </div>
+                </div>
+            </details>
+          </div>
         </div>
       
           <button onclick="document.location='Cart.html'" 

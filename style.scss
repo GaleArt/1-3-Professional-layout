@@ -638,6 +638,11 @@ section, figure {
       padding: 64px 0 48px;
       width: 640px;
       border-top: 1px solid #EAEAEA;
+      &__item {
+        top: 60%;
+        left: 32.6%;
+        width: 100%;
+      }
     }
     &__btn {
       button {padding: 0;}
