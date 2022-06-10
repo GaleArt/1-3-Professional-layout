@@ -523,7 +523,7 @@ section, figure {
   top: 75px;
   height: 764px;
   width: 232px;
-  right: -232px;
+  right: -235px;
 }
 
 .menu-box ul {
@@ -1754,5 +1754,18 @@ section, figure {
 
 .registration__text li:before {
   content: "✓ ";
+}
+
+@media (min-width: 1604px) {
+  .menu-box {
+    position: absolute;
+    right: calc(50% - 805px);
+  }
+}
+
+@media (max-width: 1603px) {
+  .menu-box {
+    right: 3px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
