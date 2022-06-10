@@ -14,13 +14,43 @@
   <div class="wrapper">
     <div class="main">
       <section class="header">
-        <div class="container">
-          <nav class="menu">
-            <ul class="menu__main">
-              <li class="menu__logo">
+        <nav id='menu' style="display:none;" class="menu-box">
+          <div id="btn2" onclick="closeMenu()" class="menu-box__btn">
+            <a href="#"><i class="fa fa-times" aria-hidden="true"></i>
+            </a>
+          </div>
+          <h2>menu</h2>
+          <h3>man</h3>
+          <ul class="menu-box__item">
+            <li><a class="menu-box__item-link" href="#">Accessories</a></li>
+            <li><a class="menu-box__item-link" href="#">Bags</a></li>
+            <li><a class="menu-box__item-link" href="#">Denim</a></li>
+            <li><a class="menu-box__item-link" href="#">T-Shirts</a></li>
+          </ul>
+          <h3>woman</h3>
+          <ul class="menu-box__item">
+            <li><a class="menu-box__item-link" href="#">Accessories</a></li>
+            <li><a class="menu-box__item-link" href="#">Jackets & Coats</a></li>
+            <li><a class="menu-box__item-link" href="#">Polos</a></li>
+            <li><a class="menu-box__item-link" href="#">T-Shirts</a></li>
+            <li><a class="menu-box__item-link" href="#">Shirts</a></li>
+          </ul>
+          <h3>kids</h3>
+          <ul class="menu-box__item">
+            <li><a class="menu-box__item-link" href="#">Accessories</a></li>
+            <li><a class="menu-box__item-link" href="#">Jackets & Coats</a></li>
+            <li><a class="menu-box__item-link" href="#">Polos</a></li>
+            <li><a class="menu-box__item-link" href="#">T-Shirts</a></li>
+            <li><a class="menu-box__item-link" href="#">Shirts</a></li>
+            <li><a class="menu-box__item-link" href="#">Bags</a></li>
+          </ul>
+        </nav>
+        <nav class="menu container">
+          <ul class="menu__main">
+            <li class="menu__logo">
                 <a href="index.html"><img src="assets/logo.png" alt="logo"></a>
-              </li>
-              <li class="menu__search">
+            </li>
+            <li class="menu__search">
                 <a href="https://www.google.com/">
                   <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M19.0596 17.6259C20.6713 15.8658 21.6282 13.6048 21.7698 11.2225C21.9113 8.84018 21.2288 
@@ -36,17 +66,17 @@
                     11.4206 19.1009C9.14916 19.0901 6.97482 18.1784 5.37484 16.566C3.77486 14.9537 2.87998 12.7724 2.88662 10.5009Z" fill="#E8E8E8"/>
                   </svg>
                 </a>
-              </li>
-            </ul>
-            <ul class="menu__users">
-              <li id="btn" onclick="showMenu()" class="menu__burger">
+            </li>
+          </ul>
+          <ul class="menu__users">
+            <li id="btn" onclick="showMenu()" class="menu__burger">
                 <a href="#">
                   <svg width="32" height="23" viewBox="0 0 32 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z" fill="#E8E8E8"/>
                   </svg>
                 </a>
-              </li>
-              <li class="menu__account">
+            </li>
+            <li class="menu__account">
                 <a href="Registration.html">
                   <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14.5 19.937C19 19.937 22.656 15.464 22.656 9.968C22.656 4.472 19 0 14.5 0C13.3631 0.0217413 
@@ -65,8 +95,8 @@
                     23.0063 18.1276 20.844 18.125Z" fill="#E8E8E8"/>
                   </svg>
                 </a>
-              </li>
-              <li class="menu__basket">
+            </li>
+            <li class="menu__basket">
                 <a href="Cart.html">
                   <svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M26.2009 29C25.5532 28.9738 24.9415 28.6948 24.4972 28.2227C24.0529 27.7506 23.8114 27.1232 23.8245 
@@ -89,41 +119,10 @@
                   </svg>
                 </a>
                 <div class="menu__basket-count" id="menu__bsk"></div>
-              </li>
-            </ul>
-            <nav id='menu' style="display:none;" class="menu-box">
-              <div id="btn2" onclick="closeMenu()" class="menu-box__btn">
-                <a href="#"><i class="fa fa-times" aria-hidden="true"></i>
-                </a>
-              </div>
-              <h2>menu</h2>
-              <h3>man</h3>
-              <ul class="menu-box__item">
-                <li><a class="menu-box__item-link" href="#">Accessories</a></li>
-                <li><a class="menu-box__item-link" href="#">Bags</a></li>
-                <li><a class="menu-box__item-link" href="#">Denim</a></li>
-                <li><a class="menu-box__item-link" href="#">T-Shirts</a></li>
-              </ul>
-              <h3>woman</h3>
-              <ul class="menu-box__item">
-                <li><a class="menu-box__item-link" href="#">Accessories</a></li>
-                <li><a class="menu-box__item-link" href="#">Jackets & Coats</a></li>
-                <li><a class="menu-box__item-link" href="#">Polos</a></li>
-                <li><a class="menu-box__item-link" href="#">T-Shirts</a></li>
-                <li><a class="menu-box__item-link" href="#">Shirts</a></li>
-              </ul>
-              <h3>kids</h3>
-              <ul class="menu-box__item">
-                <li><a class="menu-box__item-link" href="#">Accessories</a></li>
-                <li><a class="menu-box__item-link" href="#">Jackets & Coats</a></li>
-                <li><a class="menu-box__item-link" href="#">Polos</a></li>
-                <li><a class="menu-box__item-link" href="#">T-Shirts</a></li>
-                <li><a class="menu-box__item-link" href="#">Shirts</a></li>
-                <li><a class="menu-box__item-link" href="#">Bags</a></li>
-              </ul>
-            </nav>
-          </nav>
-        </div>
+            </li>
+          </ul>
+        </nav>
+        
       </section>
 
       <section class="pages__head">
