@@ -18,7 +18,7 @@ section, figure {
 }
 
 .container {
-  width: $ctnr-w;
+  max-width: 1140px;
   margin: 0 auto;
   position: relative;
 }
@@ -32,25 +32,33 @@ section, figure {
 
 .menu {
   ul {
-    padding: 0;
+    padding: 0 10px;
   }
   ul, li {
     list-style: none;
   }
-  @include flexible ();
+  display: flex;
   justify-content: space-between;
-  &__main,
+  width: 100%;
+  &__main {
+    @include flexible ();
+    justify-content: space-between;
+  }
   &__users {
-    display: flex;
-    align-items: center;
+    @include flexible ();
+    justify-content: space-between;
   }
   &__search {
-    margin-left: 41px;
+    padding: 0 44px;
   }
   &__account {
-    margin: 0 33px;
+    padding: 0 33px;
   }
-  &__basket {position: relative;}
+  &__basket {
+    position: relative;
+    @include flexible ();
+    margin-right: 10px;
+  }
   &__basket-count {
     @include flexible ();
     @include txt-m ();
