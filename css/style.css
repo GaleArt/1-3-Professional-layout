@@ -595,7 +595,6 @@ section, figure {
 }
 
 .banner__img {
-  height: 764px;
   margin-left: -230px;
 }
 
@@ -630,33 +629,50 @@ section, figure {
   width: 12px;
   height: 93px;
   background-color: #F16D7F;
-  margin: 0 16px 0 64px;
+  margin: 0 1.4% 0 5.6%;
 }
 
 .gallery {
-  display: flex;
-  flex-direction: column;
   margin-top: 65px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 0.7fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
 }
 
 .gallery__img {
-  display: flex;
-  justify-content: space-between;
-}
-
-.gallery__img__child {
   position: relative;
   text-align: center;
-  width: 360px;
-  height: 260px;
   margin: 0;
 }
 
-.gallery__img__child:hover p {
+.gallery__img:nth-child(1) {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.gallery__img:nth-child(2) {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.gallery__img:nth-child(3) {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.gallery__img:nth-child(4) {
+  grid-area: 2 / 1 / 3 / 4;
+}
+
+.gallery__img:nth-child(4) p {
+  left: 490px;
+  top: 55px;
+}
+
+.gallery__img:hover p {
   transform: scale(1.1);
 }
 
-.gallery__img__child p {
+.gallery__img p {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
@@ -673,24 +689,13 @@ section, figure {
   color: #FFFFFF;
 }
 
-.gallery__img__child span {
+.gallery__img span {
   font-family: "Lato";
   font-style: normal;
   font-weight: 700;
   color: #F16D7F;
   font-size: 24px;
   line-height: 28.8px;
-}
-
-.gallery__img .lux {
-  margin-top: 30px;
-  width: 1140px;
-  height: 180px;
-}
-
-.gallery__img .lux p {
-  left: 490px;
-  top: 55px;
 }
 
 .featured {
@@ -1768,4 +1773,7 @@ section, figure {
     right: 3px;
   }
 }
+
+/* Планшетыч */
+/* Мобилка */
 /*# sourceMappingURL=style.css.map */
