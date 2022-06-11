@@ -588,18 +588,19 @@ section, figure {
   background-color: #F1E4E6;
 }
 
+.banner img {
+  width: 100%;
+  margin-left: -20%;
+}
+
 .banner__content {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.banner__img {
-  margin-left: -230px;
-}
-
 .banner__text {
-  width: 405px;
+  width: 60%;
   color: #222222;
 }
 
@@ -636,7 +637,7 @@ section, figure {
   margin-top: 65px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 0.7fr;
+  grid-template-rows: 1fr 0.69fr;
   grid-column-gap: 30px;
   grid-row-gap: 30px;
 }
@@ -644,6 +645,8 @@ section, figure {
 .gallery__img {
   position: relative;
   text-align: center;
+  width: 360px;
+  height: 260px;
   margin: 0;
 }
 
@@ -661,6 +664,7 @@ section, figure {
 
 .gallery__img:nth-child(4) {
   grid-area: 2 / 1 / 3 / 4;
+  height: 180px;
 }
 
 .gallery__img:nth-child(4) p {
@@ -1774,6 +1778,86 @@ section, figure {
   }
 }
 
+/* Дополнительный медиа-запрос (врятли вообще нужен) */
 /* Планшетыч */
+@media (max-width: 1025px) {
+  .container {
+    width: 95%;
+  }
+  .menu ul {
+    padding: 0 10px;
+  }
+  .menu-box {
+    right: 3px;
+  }
+  .banner__text h1 {
+    font-size: 44px;
+    line-height: 53px;
+  }
+  .banner__text p {
+    font-size: 24px;
+    line-height: 28.8px;
+  }
+  .gallery {
+    margin-top: 65px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 0.69fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+  .gallery__img {
+    position: relative;
+    text-align: center;
+    width: 360px;
+    height: 260px;
+    margin: 0;
+  }
+  .gallery__img:nth-child(1) {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .gallery__img:nth-child(2) {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .gallery__img:nth-child(3) {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+  .gallery__img:nth-child(4) {
+    grid-area: 2 / 1 / 3 / 4;
+    height: 180px;
+  }
+  .gallery__img:nth-child(4) p {
+    left: 490px;
+    top: 55px;
+  }
+  .gallery__img:hover p {
+    transform: scale(1.1);
+  }
+  .gallery__img p {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    position: absolute;
+    left: 100px;
+    top: 105px;
+    width: 160px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    color: #FFFFFF;
+  }
+  .gallery__img span {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    color: #F16D7F;
+    font-size: 24px;
+    line-height: 28.8px;
+  }
+}
+
 /* Мобилка */
 /*# sourceMappingURL=style.css.map */
