@@ -1048,7 +1048,6 @@ section, figure {
       padding: 48px;
     }
   }
-  
   .footer {
     background-position: bottom left 25%;
     &__area {
@@ -1060,44 +1059,6 @@ section, figure {
     }
   }
   
-  .copyright {
-    background: #222224;
-    &__area {
-      @include flexible ();
-      padding: 0;
-      justify-content: space-between;
-      box-sizing: border-box;
-    }
-    &__text {
-      @include txt-mm ();
-      color: #FBFBFB;
-    }
-    &__social {
-      ul {
-        display: flex;
-        justify-content: space-between;
-        width: 150px;
-      }
-      ul, li {
-        padding: 0;
-        list-style: none;
-      }
-      a {
-        @include flexible ();
-        width: 32px;
-        height: 32px;
-        background-color: #fff;
-        color: #000000;
-      }
-      a:hover {
-        background-color: #E05C6E;
-        color: #ffffff;
-      }
-      a:hover svg path {
-        fill: white;
-      }
-    }
-  }
   
   .pages {
     margin: 39px 0;

@@ -1826,50 +1826,6 @@ section, figure {
   .footer__subscribe {
     padding-top: 8%;
   }
-  .copyright {
-    background: #222224;
-  }
-  .copyright__area {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    justify-content: space-between;
-    box-sizing: border-box;
-  }
-  .copyright__text {
-    font-family: "Lato";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #FBFBFB;
-  }
-  .copyright__social ul {
-    display: flex;
-    justify-content: space-between;
-    width: 150px;
-  }
-  .copyright__social ul, .copyright__social li {
-    padding: 0;
-    list-style: none;
-  }
-  .copyright__social a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 32px;
-    height: 32px;
-    background-color: #fff;
-    color: #000000;
-  }
-  .copyright__social a:hover {
-    background-color: #E05C6E;
-    color: #ffffff;
-  }
-  .copyright__social a:hover svg path {
-    fill: white;
-  }
   .pages {
     margin: 39px 0;
   }
