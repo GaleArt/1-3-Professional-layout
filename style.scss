@@ -555,7 +555,7 @@ section, figure {
       outline: none;
       position: absolute;
 		  top: 50%;
-      left: calc(50% - 750px);
+      left: 1vw;
 		  width: 47px;
 		  height: 47px;
 		  transform: translateY(-50%) translateZ(0);
@@ -568,7 +568,7 @@ section, figure {
     }
     &__btn__next {
       left: auto;
-			right: calc(50% - 750px);
+			right: 1vw;
     }
     &__wrap {
       display: flex;
@@ -1068,13 +1068,7 @@ section, figure {
   .ghost {
     display: none;
   }
-
   .catalog {
-    &__filter {
-      @include flexible ();
-      justify-content: space-between;
-      position: relative;
-    }
     &__featured {
       padding: 6% 0;
     }
@@ -1103,7 +1097,7 @@ section, figure {
         outline: none;
         position: absolute;
         top: 50%;
-        left: calc(50% - 750px);
+        left: 1vw;
         width: 47px;
         height: 47px;
         transform: translateY(-50%) translateZ(0);
@@ -1116,7 +1110,7 @@ section, figure {
       }
       &__btn__next {
         left: auto;
-        right: calc(50% - 750px);
+        right: 1vw;
       }
       &__wrap {
         display: flex;
