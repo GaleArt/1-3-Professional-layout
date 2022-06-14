@@ -1816,107 +1816,15 @@ section, figure {
   .delivery__item {
     padding: 48px;
   }
+  .footer {
+    background-position: bottom left 25%;
+  }
   .footer__area {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .footer__quote {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 360px;
     flex-direction: column;
-  }
-  .footer__quote__text {
-    font-family: "Lato";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    color: #222224;
+    padding: 8% 0 15%;
   }
   .footer__subscribe {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 557px;
-    text-align: center;
-    flex-direction: column;
-  }
-  .footer__subscribe__header {
-    font-family: "Lato";
-    font-style: normal;
-    font-weight: 700;
-    margin: 0;
-    font-size: 24px;
-    line-height: 167.2%;
-    color: #222224;
-  }
-  .footer__subscribe__text {
-    font-family: "Lato";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    margin: 0;
-    font-size: 18px;
-    line-height: 30px;
-    letter-spacing: 0em;
-    padding-bottom: 32px;
-  }
-  .footer__subscribe__form {
-    display: flex;
-  }
-  .footer__subscribe__form__input {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Lato";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    background: #E1E1E1;
-    color: #222224;
-    opacity: 0.67;
-    width: 256px;
-    height: 46px;
-    border: 1px solid #E1E1E1;
-    border-radius: 24px 0 0 24px;
-    padding: 0 22px 0 22px;
-  }
-  .footer__subscribe__form__input:hover, .footer__subscribe__form__input:focus {
-    border: 1px solid #E05C6E;
-    outline: none;
-  }
-  .footer__subscribe__form__btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Lato";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: #FFFFFF;
-    background: #E05C6E;
-    border: 1px solid #E05C6E;
-    text-align: center;
-    height: 48px;
-    width: 100px;
-    border-radius: 0 24px 24px 0;
-  }
-  .footer__subscribe__form__btn:after {
-    background: #F1F1F1;
-  }
-  .footer__subscribe__form__btn:hover {
-    color: #E05C6E;
-    outline: 0;
+    padding-top: 8%;
   }
   .copyright {
     background: #222224;
