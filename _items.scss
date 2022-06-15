@@ -370,12 +370,8 @@ $f-list-path: url(../assets/filter.jpg);
 .select {
   display: flex;
   z-index: 15;
-  position: absolute;
-  top: 0;
-  left: 34.2%;
   margin-top: 31px;
   padding: 20px 0;
-  width: 380px;
   &__area {
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     background-color: #fff;

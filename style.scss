@@ -230,7 +230,6 @@ section, figure {
     padding: 4% 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 2.6%;
     grid-row-gap: 2.6%;
   }
@@ -474,51 +473,53 @@ section, figure {
   }
 }
 
-.pages {
-  margin: 39px 0;
-  &__head {
-    @include flexible ();
-    height: 148px;
-    background-color: #F8F3F4;
-    &__text {
-      @include flexible ();
-      justify-content: space-between;
-      ul {
-        display: grid;
-        gap: .5rem;
-        grid-template-columns: 1fr 1fr 3fr;
-        width: 210px;
-        list-style: none; 
-      }
-      li+li:before {
-        content: "/\00a0";
-        color: #636363;
-      }
-      li a {
-        @include txt-s ();
-        text-decoration: none;
-        text-transform: $ttu;
-        font-size: 14px;
-        line-height: 17px;
-        color: #636363;
-      }
-      li a:hover,
-      li a:active,
-      .Selected {
-        color: #F16D7F;
-        font-weight: bold;
-      }
-      span {
-        @include txt-m ();
-        text-decoration: none;
-        text-transform: $ttu;
-        font-size: 24px;
-        line-height: 29px;
-        color: #F16D7F;
-      }
+.pages__head {
+  height: 148px;
+  background-color: #F8F3F4;
+  &__text {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    nav {
+      justify-self: end;
+    }
+    ul {
+      display: grid;
+      gap: .5rem;
+      grid-template-columns: 1fr 1fr 3fr;
+      list-style: none; 
+    }
+    li+li:before {
+      content: "/\00a0";
+      color: #636363;
+    }
+    li a {
+      @include txt-s ();
+      text-decoration: none;
+      text-transform: $ttu;
+      font-size: 14px;
+      line-height: 17px;
+      color: #636363;
+    }
+    li a:hover,
+    li a:active,
+    .Selected {
+      color: #F16D7F;
+      font-weight: bold;
+    }
+    span {
+      @include txt-m ();
+      text-decoration: none;
+      text-transform: $ttu;
+      font-size: 24px;
+      line-height: 29px;
+      color: #F16D7F;
     }
   }
 }
+
 
 .catalog {
   &__filter {
@@ -1019,7 +1020,7 @@ section, figure {
 }
 
 /* Планшетыч */
-@media (max-width: 1025px) {
+@media screen and (max-width: 1025px) {
   .container {
     width: 95%;
   }
@@ -1049,7 +1050,7 @@ section, figure {
     }
   }
   .footer {
-    background-position: bottom left 25%;
+    background-position: bottom left;
     &__area {
       flex-direction: column;
       padding: 8% 0 15%;
@@ -1074,149 +1075,26 @@ section, figure {
     }
   }
   
+
+
+
   .product {
-    &__header {
-      background: #F8F3F4;
-      height: 148px;
-      &__text {
-        @include flexible ();
-        justify-content: space-between;
-      }
-    }
+    
     &__carousel {
-      height: 777px;
-      background: #F7F7F7;
-      &__area {
-        width: 100%;
-        overflow: hidden;
-        position: relative;
-      }
-      &__btn__prev,
-      &__btn__next {
-        border: none;
-        outline: none;
-        position: absolute;
-        top: 50%;
-        left: 1vw;
-        width: 47px;
-        height: 47px;
-        transform: translateY(-50%) translateZ(0);
-        cursor: pointer;
-        white-space: nowrap;
-        overflow: hidden;
-        z-index: 3;
-        background: rgba(42, 42, 42, 0.15);
-        color: #F16D7F;
-      }
-      &__btn__next {
-        left: auto;
-        right: 1vw;
-      }
-      &__wrap {
-        display: flex;
-        transition: transform .5s;
-        will-change: transform;
-        position: relative;
-        z-index: 1;
-        height: 100%;
-      }
-      &__item {
-        flex: 0 0 100%;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      &__img {
-        object-fit: cover;
-        display: block;
-      }
+      height: 100%;
     }
     &__area {
-      padding: 80px 0 50px;
-      text-align: center;
+      padding: 7% 0;
     }
     &__collection {
-      @include flexible ();
-      flex-direction: column;
-      text-align: center;
-      height: 600px;
-      border: 1px solid #EAEAEA;
-      background: #FFFFFF;
-      -webkit-animation: slide 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
-              animation: slide 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
-      &__header {
-        @include txt-s ();
-        margin: 0;
-        font-size: 14px;
-        line-height: 17px;
-        color: #F16D7F;
-        &__title {
-          @include txt-s ();
-          margin: 0;
-          font-size: 18px;
-          line-height: 22px;
-          color: #4D4D4D;
-        }
-        &__line {
-          margin: 12px;
-          width: 64px;
-          height: 3px;
-          background: #EF5B70;
-        }
-      }
-      &__text {
-        @include txt-s ();
-        margin-top: 48px;
-        font-size: 14px;
-        line-height: 17px;
-        text-align: center;
-        color: #5E5E5E;
-        width: 555px;
-      }
-      &__price {
-        @include txt-s ();
-        padding: 32px 0 64px;
-        font-size: 24px;
-        line-height: 29px;
-        color: #EF5B70;
-      }
+      -webkit-animation: none;
+              animation: none;
       &__choose {
-        @include flexible ();
-        padding: 64px 0 48px;
-        width: 640px;
-        border-top: 1px solid #EAEAEA;
         &__item {
+          left: 25%;
           top: 60%;
-          left: 32.6%;
-          width: 100%;
+          width: 50%;
         }
-      }
-      &__btn {
-        button {padding: 0;}
-        @include flexible ();
-        @include txt-mm ();
-        padding: 14px 38px 8px;
-        background-color: transparent;
-        border: 1px solid #F26376;
-        color: #F26376;
-        &-bsk {
-          padding-right: 22px;
-        }
-      }
-      &__btn:after {
-        background: #F26376;
-      }
-      &__btn:hover {
-        border: 1px solid transparent;
-        outline: 0;
-        color: #ffffff;
-      }
-      &__btn svg path {
-        fill: #F26376;
-      }
-      &__btn:hover svg path {
-        fill: #ffffff;
       }
     }
   }
